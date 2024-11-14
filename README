@@ -1,0 +1,2 @@
+Enhanced CROP PUF design with a single RO at the put and an RS Latching the PLL outputs.
+I have excluded the generated .bit file from the repo.
