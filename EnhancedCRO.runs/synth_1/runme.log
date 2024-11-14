@@ -1,0 +1,2086 @@
+
+*** Running vivado
+    with args -log enhancedCROwrap.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source enhancedCROwrap.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source enhancedCROwrap.tcl -notrace
+Command: synth_design -top enhancedCROwrap -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18128 
+WARNING: [Synth 8-2490] overwriting previous definition of module PLL_BASE [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/ome/sreekanth/Downloads/PLL_BASE.v:194]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.445 ; gain = 96.211 ; free physical = 1068 ; free virtual = 2332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'enhancedCROwrap' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:23]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0011 
+	Parameter S3 bound to: 4'b0010 
+	Parameter S4 bound to: 4'b0110 
+	Parameter S5 bound to: 4'b0111 
+	Parameter S6 bound to: 4'b0101 
+	Parameter S7 bound to: 4'b0100 
+	Parameter S8 bound to: 4'b1100 
+	Parameter S9 bound to: 4'b1101 
+	Parameter S10 bound to: 4'b1111 
+	Parameter S11 bound to: 4'b1110 
+	Parameter S12 bound to: 4'b1010 
+	Parameter S13 bound to: 4'b1011 
+	Parameter S14 bound to: 4'b1001 
+	Parameter S15 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:49]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:51]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:52]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:53]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:55]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:619]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (1#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:619]
+INFO: [Synth 8-6157] synthesizing module 'cro' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v:24]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v:32]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v:34]
+INFO: [Synth 8-6157] synthesizing module 'rohmDRC' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/rohmDRC.v:21]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/rohmDRC.v:27]
+INFO: [Synth 8-6157] synthesizing module 'andga' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/andga.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'andga' (2#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/andga.v:23]
+INFO: [Synth 8-6157] synthesizing module 'notga' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/notga.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'notga' (3#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/notga.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUXF7' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:26726]
+INFO: [Synth 8-6155] done synthesizing module 'MUXF7' (4#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:26726]
+INFO: [Synth 8-6155] done synthesizing module 'rohmDRC' (5#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/rohmDRC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'cro' (6#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v:24]
+WARNING: [Synth 8-689] width (17) of port connection 'eni' does not match port width (16) of module 'cro' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:109]
+INFO: [Synth 8-6157] synthesizing module 'enhancedcro' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedcro.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:698]
+	Parameter CLK_SEL_TYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (8#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:698]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/ome/sreekanth/Downloads/PLL_BASE.v:194]
+	Parameter PERIOD bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:40134]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.100000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (9#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:40134]
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (10#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/ome/sreekanth/Downloads/PLL_BASE.v:194]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:25494]
+	Parameter INIT bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (11#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:25494]
+INFO: [Synth 8-6155] done synthesizing module 'enhancedcro' (12#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedcro.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ssdtop' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdtop.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ssdisplay' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdisplay.v:21]
+INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdisplay.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ssdisplay' (13#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdisplay.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ComparetwoRO' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v:21]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v:37]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v:26]
+WARNING: [Synth 8-6014] Unused sequential element rcount_reg was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v:134]
+WARNING: [Synth 8-6014] Unused sequential element rcountt_reg was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (14#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v:26]
+WARNING: [Synth 8-3848] Net resp in module/entity ComparetwoRO does not have driver. [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ComparetwoRO' (15#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ssdtop' (16#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdtop.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uartmodDRC' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:23]
+	Parameter RST_REG bound to: 3'b000 
+	Parameter LD_INIT_STR bound to: 3'b001 
+	Parameter SEND_CHAR bound to: 3'b010 
+	Parameter RDY_LOW bound to: 3'b011 
+	Parameter WAIT_RDY bound to: 3'b100 
+	Parameter WAIT_BTN bound to: 3'b101 
+	Parameter LD_BTN_STR bound to: 3'b110 
+INFO: [Synth 8-638] synthesizing module 'UART_TXDDRC' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'UART_TXDDRC' (17#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[0] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[1] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[2] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[3] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[4] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[5] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[6] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[7] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[8] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+WARNING: [Synth 8-6014] Unused sequential element WELCOME_STR_reg[9] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'uartmodDRC' (18#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:132]
+WARNING: [Synth 8-567] referenced signal 'secpdone' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:129]
+WARNING: [Synth 8-567] referenced signal 'alldone' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:129]
+WARNING: [Synth 8-567] referenced signal 'eni' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:318]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:318]
+WARNING: [Synth 8-567] referenced signal 'cpdl' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:318]
+WARNING: [Synth 8-567] referenced signal 'fdif' should be on the sensitivity list [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:318]
+WARNING: [Synth 8-6014] Unused sequential element fdifreg_reg was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'enhancedCROwrap' (19#1) [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:23]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[4]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[3]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[2]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[1]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[0]
+WARNING: [Synth 8-3331] design ComparetwoRO has unconnected port resp
+WARNING: [Synth 8-3331] design enhancedcro has unconnected port clk
+WARNING: [Synth 8-3331] design cro has unconnected port clr
+WARNING: [Synth 8-3331] design cro has unconnected port clk
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[3]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[2]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[1]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1359.570 ; gain = 128.336 ; free physical = 1085 ; free virtual = 2348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1359.570 ; gain = 128.336 ; free physical = 1084 ; free virtual = 2348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1359.570 ; gain = 128.336 ; free physical = 1084 ; free virtual = 2348
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc]
+Finished Parsing XDC File [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/enhancedCROwrap_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/enhancedCROwrap_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  PLLE2_BASE => PLLE2_ADV: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1739.352 ; gain = 0.000 ; free physical = 807 ; free virtual = 2071
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 735 ; free virtual = 1999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 735 ; free virtual = 1999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 737 ; free virtual = 2001
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'txState_reg' in module 'UART_TXDDRC'
+INFO: [Synth 8-5544] ROM "READY" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bitIndex" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "txState" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'sendStr_reg[9][7:0]' into 'sendStr_reg[8][7:0]' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-6014] Unused sequential element sendStr_reg[9] was removed.  [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+INFO: [Synth 8-802] inferred FSM for state register 'uartState_reg' in module 'uartmodDRC'
+INFO: [Synth 8-5544] ROM "sendStr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "strIndex" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uartdone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "uartState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "uartState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uartState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'enhancedCROwrap'
+INFO: [Synth 8-5544] ROM "rddata" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tsecp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tsecp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gosen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "NS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "NS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'sela_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v:60]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     rdy |                               00 |                               00
+                load_bit |                               01 |                               01
+                send_bit |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txState_reg' using encoding 'sequential' in module 'UART_TXDDRC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RST_REG |                              000 |                              000
+             LD_INIT_STR |                              001 |                              001
+               SEND_CHAR |                              010 |                              010
+                 RDY_LOW |                              011 |                              011
+                WAIT_RDY |                              100 |                              100
+                WAIT_BTN |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uartState_reg' using encoding 'sequential' in module 'uartmodDRC'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:134]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:134]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     S10 |                  000000000000010 |                             1111
+                      S0 |                  000000000000001 |                             0000
+                      S1 |                  000000001000000 |                             0001
+                      S2 |                  000000000001000 |                             0011
+                      S3 |                  000000000010000 |                             0010
+                      S4 |                  000000010000000 |                             0110
+                     S11 |                  100000000000000 |                             1110
+                     S12 |                  001000000000000 |                             1010
+                     S13 |                  000010000000000 |                             1011
+                     S14 |                  000100000000000 |                             1001
+                      S5 |                  010000000000000 |                             0111
+                      S8 |                  000000100000000 |                             1100
+                      S6 |                  000001000000000 |                             0101
+                      S9 |                  000000000100000 |                             1101
+                      S7 |                  000000000000100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'one-hot' in module 'enhancedCROwrap'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:134]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:278]
+WARNING: [Synth 8-327] inferring latch for variable 'rddata_reg' [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:117]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 693 ; free virtual = 1958
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 13    
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 8     
+	   9 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module enhancedCROwrap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 8     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module cro 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 1     
+Module ssdisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+Module ssdtop 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+Module UART_TXDDRC 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module uartmodDRC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "NS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NS" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[4]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[3]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[2]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[1]
+WARNING: [Synth 8-3331] design Counter has unconnected port cpdl[0]
+WARNING: [Synth 8-3331] design ComparetwoRO has unconnected port resp
+WARNING: [Synth 8-3331] design enhancedcro has unconnected port clk
+WARNING: [Synth 8-3331] design cro has unconnected port clr
+WARNING: [Synth 8-3331] design cro has unconnected port clk
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[3]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[2]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[1]
+WARNING: [Synth 8-3331] design enhancedCROwrap has unconnected port selcro[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FSM_onehot_NS_reg[1] )
+INFO: [Synth 8-3886] merging instance 'rddata_reg[32]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[33]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[34]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[35]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[36]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[37]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'rddata_reg[38]' (LD) to 'rddata_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rddata_reg[40] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_NS_reg[1]) is unused and will be removed from module enhancedCROwrap.
+WARNING: [Synth 8-3332] Sequential element (rddata_reg[40]) is unused and will be removed from module enhancedCROwrap.
+INFO: [Synth 8-3886] merging instance 'uart64/strEnd_reg[3]' (FDSE) to 'uart64/strEnd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uart64/strEnd_reg[0]' (FDRE) to 'uart64/strEnd_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uart64/\strEnd_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart64/\strEnd_reg[2] )
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][7]' (FDRE) to 'uart64/sendStr_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][6]' (FDRE) to 'uart64/sendStr_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][5]' (FDRE) to 'uart64/sendStr_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][4]' (FDRE) to 'uart64/sendStr_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][3]' (FDSE) to 'uart64/sendStr_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'uart64/sendStr_reg[8][2]' (FDRE) to 'uart64/sendStr_reg[8][0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uart64/\sendStr_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart64/\sendStr_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uart64/\transmit/txData_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart64/\transmit/txData_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (sendStr_reg[8][1]) is unused and will be removed from module uartmodDRC.
+WARNING: [Synth 8-3332] Sequential element (sendStr_reg[8][0]) is unused and will be removed from module uartmodDRC.
+WARNING: [Synth 8-3332] Sequential element (transmit/txData_reg[9]) is unused and will be removed from module uartmodDRC.
+WARNING: [Synth 8-3332] Sequential element (transmit/txData_reg[0]) is unused and will be removed from module uartmodDRC.
+WARNING: [Synth 8-3332] Sequential element (strEnd_reg[2]) is unused and will be removed from module uartmodDRC.
+WARNING: [Synth 8-3332] Sequential element (strEnd_reg[1]) is unused and will be removed from module uartmodDRC.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (sevensegm/\ssdis/c_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (ssdis/c_reg[0]) is unused and will be removed from module ssdtop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 460 ; free virtual = 1728
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 832 ; free virtual = 2101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : crores/ro15/tem_inferred__0/out[15]
+      : crores/ro15/tem_inferred__0/in0[15]
+      : crores/ro15/tem_inferred/out[15]
+      : crores/ro15/tem_inferred/in0[15]
+      : crores/ro15/not25/b
+      : crores/ro15/not25/b_inferred/b
+      : crores/ro15/not25/b_inferred/a
+      : crores/ro15/not25/a
+      : crores/ro15/tem_inferred__0/out[13]
+      : crores/ro15/tem_inferred__0/in0[13]
+      : crores/ro15/tem_inferred/out[13]
+      : crores/ro15/tem_inferred/in0[13]
+      : crores/ro15/tem_inferred__0/out[12]
+      : crores/ro15/tem_inferred__0/in0[12]
+      : crores/ro15/tem_inferred/out[12]
+      : crores/ro15/tem_inferred/in0[12]
+      : crores/ro15/not24/b
+      : crores/ro15/not24/b_inferred/b
+      : crores/ro15/not24/b_inferred/a
+      : crores/ro15/not24/a
+      : crores/ro15/tem_inferred__0/out[10]
+      : crores/ro15/tem_inferred__0/in0[10]
+      : crores/ro15/tem_inferred/out[10]
+      : crores/ro15/tem_inferred/in0[10]
+      : crores/ro15/tem_inferred__0/out[9]
+      : crores/ro15/tem_inferred__0/in0[9]
+      : crores/ro15/tem_inferred/out[9]
+      : crores/ro15/tem_inferred/in0[9]
+      : crores/ro15/not23/b
+      : crores/ro15/not23/b_inferred/b
+      : crores/ro15/not23/b_inferred/a
+      : crores/ro15/not23/a
+      : crores/ro15/tem_inferred__0/out[7]
+      : crores/ro15/tem_inferred__0/in0[7]
+      : crores/ro15/tem_inferred/out[7]
+      : crores/ro15/tem_inferred/in0[7]
+      : crores/ro15/tem_inferred__0/out[6]
+      : crores/ro15/tem_inferred__0/in0[6]
+      : crores/ro15/tem_inferred/out[6]
+      : crores/ro15/tem_inferred/in0[6]
+      : crores/ro15/not22/b
+      : crores/ro15/not22/b_inferred/b
+      : crores/ro15/not22/b_inferred/a
+      : crores/ro15/not22/a
+      : crores/ro15/tem_inferred__0/out[4]
+      : crores/ro15/tem_inferred__0/in0[4]
+      : crores/ro15/tem_inferred/out[4]
+      : crores/ro15/tem_inferred/in0[4]
+      : crores/ro15/tem_inferred__0/out[3]
+      : crores/ro15/tem_inferred__0/in0[3]
+      : crores/ro15/tem_inferred/out[3]
+      : crores/ro15/tem_inferred/in0[3]
+      : crores/ro15/not21/b
+      : crores/ro15/not21/b_inferred/b
+      : crores/ro15/not21/b_inferred/a
+      : crores/ro15/not21/a
+      : crores/ro15/tem_inferred__0/out[1]
+      : crores/ro15/tem_inferred__0/in0[1]
+      : crores/ro15/tem_inferred/out[1]
+      : crores/ro15/tem_inferred/in0[1]
+      : crores/ro15/and1/c
+      : crores/ro15/and1/c_inferred/c
+      : crores/ro15/and1/c_inferred/b
+      : crores/ro15/and1/b
+      : crores/ro15/tem_inferred__0/out[0]
+      : crores/ro15/tem_inferred__0/in0[0]
+      : crores/ro15/tem_inferred/out[0]
+      : crores/ro15/tem_inferred/in0[0]
+      : crores/ro14/tem_inferred__0/out[15]
+      : crores/ro14/tem_inferred__0/in0[15]
+      : crores/ro14/tem_inferred/out[15]
+      : crores/ro14/tem_inferred/in0[15]
+      : crores/ro14/not25/b
+      : crores/ro14/not25/b_inferred/b
+      : crores/ro14/not25/b_inferred/a
+      : crores/ro14/not25/a
+      : crores/ro14/tem_inferred__0/out[13]
+      : crores/ro14/tem_inferred__0/in0[13]
+      : crores/ro14/tem_inferred/out[13]
+      : crores/ro14/tem_inferred/in0[13]
+      : crores/ro14/tem_inferred__0/out[12]
+      : crores/ro14/tem_inferred__0/in0[12]
+      : crores/ro14/tem_inferred/out[12]
+      : crores/ro14/tem_inferred/in0[12]
+      : crores/ro14/not24/b
+      : crores/ro14/not24/b_inferred/b
+      : crores/ro14/not24/b_inferred/a
+      : crores/ro14/not24/a
+      : crores/ro14/tem_inferred__0/out[10]
+      : crores/ro14/tem_inferred__0/in0[10]
+      : crores/ro14/tem_inferred/out[10]
+      : crores/ro14/tem_inferred/in0[10]
+      : crores/ro14/tem_inferred__0/out[9]
+      : crores/ro14/tem_inferred__0/in0[9]
+      : crores/ro14/tem_inferred/out[9]
+      : crores/ro14/tem_inferred/in0[9]
+      : crores/ro14/not23/b
+      : crores/ro14/not23/b_inferred/b
+      : crores/ro14/not23/b_inferred/a
+      : crores/ro14/not23/a
+      : crores/ro14/tem_inferred__0/out[7]
+      : crores/ro14/tem_inferred__0/in0[7]
+      : crores/ro14/tem_inferred/out[7]
+      : crores/ro14/tem_inferred/in0[7]
+      : crores/ro14/tem_inferred__0/out[6]
+      : crores/ro14/tem_inferred__0/in0[6]
+      : crores/ro14/tem_inferred/out[6]
+      : crores/ro14/tem_inferred/in0[6]
+      : crores/ro14/not22/b
+      : crores/ro14/not22/b_inferred/b
+      : crores/ro14/not22/b_inferred/a
+      : crores/ro14/not22/a
+      : crores/ro14/tem_inferred__0/out[4]
+      : crores/ro14/tem_inferred__0/in0[4]
+      : crores/ro14/tem_inferred/out[4]
+      : crores/ro14/tem_inferred/in0[4]
+      : crores/ro14/tem_inferred__0/out[3]
+      : crores/ro14/tem_inferred__0/in0[3]
+      : crores/ro14/tem_inferred/out[3]
+      : crores/ro14/tem_inferred/in0[3]
+      : crores/ro14/not21/b
+      : crores/ro14/not21/b_inferred/b
+      : crores/ro14/not21/b_inferred/a
+      : crores/ro14/not21/a
+      : crores/ro14/tem_inferred__0/out[1]
+      : crores/ro14/tem_inferred__0/in0[1]
+      : crores/ro14/tem_inferred/out[1]
+      : crores/ro14/tem_inferred/in0[1]
+      : crores/ro14/and1/c
+      : crores/ro14/and1/c_inferred/c
+      : crores/ro14/and1/c_inferred/b
+      : crores/ro14/and1/b
+      : crores/ro14/tem_inferred__0/out[0]
+      : crores/ro14/tem_inferred__0/in0[0]
+      : crores/ro14/tem_inferred/out[0]
+      : crores/ro14/tem_inferred/in0[0]
+      : crores/ro13/tem_inferred__0/out[15]
+      : crores/ro13/tem_inferred__0/in0[15]
+      : crores/ro13/tem_inferred/out[15]
+      : crores/ro13/tem_inferred/in0[15]
+      : crores/ro13/not25/b
+      : crores/ro13/not25/b_inferred/b
+      : crores/ro13/not25/b_inferred/a
+      : crores/ro13/not25/a
+      : crores/ro13/tem_inferred__0/out[13]
+      : crores/ro13/tem_inferred__0/in0[13]
+      : crores/ro13/tem_inferred/out[13]
+      : crores/ro13/tem_inferred/in0[13]
+      : crores/ro13/tem_inferred__0/out[12]
+      : crores/ro13/tem_inferred__0/in0[12]
+      : crores/ro13/tem_inferred/out[12]
+      : crores/ro13/tem_inferred/in0[12]
+      : crores/ro13/not24/b
+      : crores/ro13/not24/b_inferred/b
+      : crores/ro13/not24/b_inferred/a
+      : crores/ro13/not24/a
+      : crores/ro13/tem_inferred__0/out[10]
+      : crores/ro13/tem_inferred__0/in0[10]
+      : crores/ro13/tem_inferred/out[10]
+      : crores/ro13/tem_inferred/in0[10]
+      : crores/ro13/tem_inferred__0/out[9]
+      : crores/ro13/tem_inferred__0/in0[9]
+      : crores/ro13/tem_inferred/out[9]
+      : crores/ro13/tem_inferred/in0[9]
+      : crores/ro13/not23/b
+      : crores/ro13/not23/b_inferred/b
+      : crores/ro13/not23/b_inferred/a
+      : crores/ro13/not23/a
+      : crores/ro13/tem_inferred__0/out[7]
+      : crores/ro13/tem_inferred__0/in0[7]
+      : crores/ro13/tem_inferred/out[7]
+      : crores/ro13/tem_inferred/in0[7]
+      : crores/ro13/tem_inferred__0/out[6]
+      : crores/ro13/tem_inferred__0/in0[6]
+      : crores/ro13/tem_inferred/out[6]
+      : crores/ro13/tem_inferred/in0[6]
+      : crores/ro13/not22/b
+      : crores/ro13/not22/b_inferred/b
+      : crores/ro13/not22/b_inferred/a
+      : crores/ro13/not22/a
+      : crores/ro13/tem_inferred__0/out[4]
+      : crores/ro13/tem_inferred__0/in0[4]
+      : crores/ro13/tem_inferred/out[4]
+      : crores/ro13/tem_inferred/in0[4]
+      : crores/ro13/tem_inferred__0/out[3]
+      : crores/ro13/tem_inferred__0/in0[3]
+      : crores/ro13/tem_inferred/out[3]
+      : crores/ro13/tem_inferred/in0[3]
+      : crores/ro13/not21/b
+      : crores/ro13/not21/b_inferred/b
+      : crores/ro13/not21/b_inferred/a
+      : crores/ro13/not21/a
+      : crores/ro13/tem_inferred__0/out[1]
+      : crores/ro13/tem_inferred__0/in0[1]
+      : crores/ro13/tem_inferred/out[1]
+      : crores/ro13/tem_inferred/in0[1]
+      : crores/ro13/and1/c
+      : crores/ro13/and1/c_inferred/c
+      : crores/ro13/and1/c_inferred/b
+      : crores/ro13/and1/b
+      : crores/ro13/tem_inferred__0/out[0]
+      : crores/ro13/tem_inferred__0/in0[0]
+      : crores/ro13/tem_inferred/out[0]
+      : crores/ro13/tem_inferred/in0[0]
+      : crores/ro12/tem_inferred__0/out[15]
+      : crores/ro12/tem_inferred__0/in0[15]
+      : crores/ro12/tem_inferred/out[15]
+      : crores/ro12/tem_inferred/in0[15]
+      : crores/ro12/not25/b
+      : crores/ro12/not25/b_inferred/b
+      : crores/ro12/not25/b_inferred/a
+      : crores/ro12/not25/a
+      : crores/ro12/tem_inferred__0/out[13]
+      : crores/ro12/tem_inferred__0/in0[13]
+      : crores/ro12/tem_inferred/out[13]
+      : crores/ro12/tem_inferred/in0[13]
+      : crores/ro12/tem_inferred__0/out[12]
+      : crores/ro12/tem_inferred__0/in0[12]
+      : crores/ro12/tem_inferred/out[12]
+      : crores/ro12/tem_inferred/in0[12]
+      : crores/ro12/not24/b
+      : crores/ro12/not24/b_inferred/b
+      : crores/ro12/not24/b_inferred/a
+      : crores/ro12/not24/a
+      : crores/ro12/tem_inferred__0/out[10]
+      : crores/ro12/tem_inferred__0/in0[10]
+      : crores/ro12/tem_inferred/out[10]
+      : crores/ro12/tem_inferred/in0[10]
+      : crores/ro12/tem_inferred__0/out[9]
+      : crores/ro12/tem_inferred__0/in0[9]
+      : crores/ro12/tem_inferred/out[9]
+      : crores/ro12/tem_inferred/in0[9]
+      : crores/ro12/not23/b
+      : crores/ro12/not23/b_inferred/b
+      : crores/ro12/not23/b_inferred/a
+      : crores/ro12/not23/a
+      : crores/ro12/tem_inferred__0/out[7]
+      : crores/ro12/tem_inferred__0/in0[7]
+      : crores/ro12/tem_inferred/out[7]
+      : crores/ro12/tem_inferred/in0[7]
+      : crores/ro12/tem_inferred__0/out[6]
+      : crores/ro12/tem_inferred__0/in0[6]
+      : crores/ro12/tem_inferred/out[6]
+      : crores/ro12/tem_inferred/in0[6]
+      : crores/ro12/not22/b
+      : crores/ro12/not22/b_inferred/b
+      : crores/ro12/not22/b_inferred/a
+      : crores/ro12/not22/a
+      : crores/ro12/tem_inferred__0/out[4]
+      : crores/ro12/tem_inferred__0/in0[4]
+      : crores/ro12/tem_inferred/out[4]
+      : crores/ro12/tem_inferred/in0[4]
+      : crores/ro12/tem_inferred__0/out[3]
+      : crores/ro12/tem_inferred__0/in0[3]
+      : crores/ro12/tem_inferred/out[3]
+      : crores/ro12/tem_inferred/in0[3]
+      : crores/ro12/not21/b
+      : crores/ro12/not21/b_inferred/b
+      : crores/ro12/not21/b_inferred/a
+      : crores/ro12/not21/a
+      : crores/ro12/tem_inferred__0/out[1]
+      : crores/ro12/tem_inferred__0/in0[1]
+      : crores/ro12/tem_inferred/out[1]
+      : crores/ro12/tem_inferred/in0[1]
+      : crores/ro12/and1/c
+      : crores/ro12/and1/c_inferred/c
+      : crores/ro12/and1/c_inferred/b
+      : crores/ro12/and1/b
+      : crores/ro12/tem_inferred__0/out[0]
+      : crores/ro12/tem_inferred__0/in0[0]
+      : crores/ro12/tem_inferred/out[0]
+      : crores/ro12/tem_inferred/in0[0]
+      : crores/ro11/tem_inferred__0/out[15]
+      : crores/ro11/tem_inferred__0/in0[15]
+      : crores/ro11/tem_inferred/out[15]
+      : crores/ro11/tem_inferred/in0[15]
+      : crores/ro11/not25/b
+      : crores/ro11/not25/b_inferred/b
+      : crores/ro11/not25/b_inferred/a
+      : crores/ro11/not25/a
+      : crores/ro11/tem_inferred__0/out[13]
+      : crores/ro11/tem_inferred__0/in0[13]
+      : crores/ro11/tem_inferred/out[13]
+      : crores/ro11/tem_inferred/in0[13]
+      : crores/ro11/tem_inferred__0/out[12]
+      : crores/ro11/tem_inferred__0/in0[12]
+      : crores/ro11/tem_inferred/out[12]
+      : crores/ro11/tem_inferred/in0[12]
+      : crores/ro11/not24/b
+      : crores/ro11/not24/b_inferred/b
+      : crores/ro11/not24/b_inferred/a
+      : crores/ro11/not24/a
+      : crores/ro11/tem_inferred__0/out[10]
+      : crores/ro11/tem_inferred__0/in0[10]
+      : crores/ro11/tem_inferred/out[10]
+      : crores/ro11/tem_inferred/in0[10]
+      : crores/ro11/tem_inferred__0/out[9]
+      : crores/ro11/tem_inferred__0/in0[9]
+      : crores/ro11/tem_inferred/out[9]
+      : crores/ro11/tem_inferred/in0[9]
+      : crores/ro11/not23/b
+      : crores/ro11/not23/b_inferred/b
+      : crores/ro11/not23/b_inferred/a
+      : crores/ro11/not23/a
+      : crores/ro11/tem_inferred__0/out[7]
+      : crores/ro11/tem_inferred__0/in0[7]
+      : crores/ro11/tem_inferred/out[7]
+      : crores/ro11/tem_inferred/in0[7]
+      : crores/ro11/tem_inferred__0/out[6]
+      : crores/ro11/tem_inferred__0/in0[6]
+      : crores/ro11/tem_inferred/out[6]
+      : crores/ro11/tem_inferred/in0[6]
+      : crores/ro11/not22/b
+      : crores/ro11/not22/b_inferred/b
+      : crores/ro11/not22/b_inferred/a
+      : crores/ro11/not22/a
+      : crores/ro11/tem_inferred__0/out[4]
+      : crores/ro11/tem_inferred__0/in0[4]
+      : crores/ro11/tem_inferred/out[4]
+      : crores/ro11/tem_inferred/in0[4]
+      : crores/ro11/tem_inferred__0/out[3]
+      : crores/ro11/tem_inferred__0/in0[3]
+      : crores/ro11/tem_inferred/out[3]
+      : crores/ro11/tem_inferred/in0[3]
+      : crores/ro11/not21/b
+      : crores/ro11/not21/b_inferred/b
+      : crores/ro11/not21/b_inferred/a
+      : crores/ro11/not21/a
+      : crores/ro11/tem_inferred__0/out[1]
+      : crores/ro11/tem_inferred__0/in0[1]
+      : crores/ro11/tem_inferred/out[1]
+      : crores/ro11/tem_inferred/in0[1]
+      : crores/ro11/and1/c
+      : crores/ro11/and1/c_inferred/c
+      : crores/ro11/and1/c_inferred/b
+      : crores/ro11/and1/b
+      : crores/ro11/tem_inferred__0/out[0]
+      : crores/ro11/tem_inferred__0/in0[0]
+      : crores/ro11/tem_inferred/out[0]
+      : crores/ro11/tem_inferred/in0[0]
+      : crores/ro10/tem_inferred__0/out[15]
+      : crores/ro10/tem_inferred__0/in0[15]
+      : crores/ro10/tem_inferred/out[15]
+      : crores/ro10/tem_inferred/in0[15]
+      : crores/ro10/not25/b
+      : crores/ro10/not25/b_inferred/b
+      : crores/ro10/not25/b_inferred/a
+      : crores/ro10/not25/a
+      : crores/ro10/tem_inferred__0/out[13]
+      : crores/ro10/tem_inferred__0/in0[13]
+      : crores/ro10/tem_inferred/out[13]
+      : crores/ro10/tem_inferred/in0[13]
+      : crores/ro10/tem_inferred__0/out[12]
+      : crores/ro10/tem_inferred__0/in0[12]
+      : crores/ro10/tem_inferred/out[12]
+      : crores/ro10/tem_inferred/in0[12]
+      : crores/ro10/not24/b
+      : crores/ro10/not24/b_inferred/b
+      : crores/ro10/not24/b_inferred/a
+      : crores/ro10/not24/a
+      : crores/ro10/tem_inferred__0/out[10]
+      : crores/ro10/tem_inferred__0/in0[10]
+      : crores/ro10/tem_inferred/out[10]
+      : crores/ro10/tem_inferred/in0[10]
+      : crores/ro10/tem_inferred__0/out[9]
+      : crores/ro10/tem_inferred__0/in0[9]
+      : crores/ro10/tem_inferred/out[9]
+      : crores/ro10/tem_inferred/in0[9]
+      : crores/ro10/not23/b
+      : crores/ro10/not23/b_inferred/b
+      : crores/ro10/not23/b_inferred/a
+      : crores/ro10/not23/a
+      : crores/ro10/tem_inferred__0/out[7]
+      : crores/ro10/tem_inferred__0/in0[7]
+      : crores/ro10/tem_inferred/out[7]
+      : crores/ro10/tem_inferred/in0[7]
+      : crores/ro10/tem_inferred__0/out[6]
+      : crores/ro10/tem_inferred__0/in0[6]
+      : crores/ro10/tem_inferred/out[6]
+      : crores/ro10/tem_inferred/in0[6]
+      : crores/ro10/not22/b
+      : crores/ro10/not22/b_inferred/b
+      : crores/ro10/not22/b_inferred/a
+      : crores/ro10/not22/a
+      : crores/ro10/tem_inferred__0/out[4]
+      : crores/ro10/tem_inferred__0/in0[4]
+      : crores/ro10/tem_inferred/out[4]
+      : crores/ro10/tem_inferred/in0[4]
+      : crores/ro10/tem_inferred__0/out[3]
+      : crores/ro10/tem_inferred__0/in0[3]
+      : crores/ro10/tem_inferred/out[3]
+      : crores/ro10/tem_inferred/in0[3]
+      : crores/ro10/not21/b
+      : crores/ro10/not21/b_inferred/b
+      : crores/ro10/not21/b_inferred/a
+      : crores/ro10/not21/a
+      : crores/ro10/tem_inferred__0/out[1]
+      : crores/ro10/tem_inferred__0/in0[1]
+      : crores/ro10/tem_inferred/out[1]
+      : crores/ro10/tem_inferred/in0[1]
+      : crores/ro10/and1/c
+      : crores/ro10/and1/c_inferred/c
+      : crores/ro10/and1/c_inferred/b
+      : crores/ro10/and1/b
+      : crores/ro10/tem_inferred__0/out[0]
+      : crores/ro10/tem_inferred__0/in0[0]
+      : crores/ro10/tem_inferred/out[0]
+      : crores/ro10/tem_inferred/in0[0]
+      : crores/ro9/tem_inferred__0/out[15]
+      : crores/ro9/tem_inferred__0/in0[15]
+      : crores/ro9/tem_inferred/out[15]
+      : crores/ro9/tem_inferred/in0[15]
+      : crores/ro9/not25/b
+      : crores/ro9/not25/b_inferred/b
+      : crores/ro9/not25/b_inferred/a
+      : crores/ro9/not25/a
+      : crores/ro9/tem_inferred__0/out[13]
+      : crores/ro9/tem_inferred__0/in0[13]
+      : crores/ro9/tem_inferred/out[13]
+      : crores/ro9/tem_inferred/in0[13]
+      : crores/ro9/tem_inferred__0/out[12]
+      : crores/ro9/tem_inferred__0/in0[12]
+      : crores/ro9/tem_inferred/out[12]
+      : crores/ro9/tem_inferred/in0[12]
+      : crores/ro9/not24/b
+      : crores/ro9/not24/b_inferred/b
+      : crores/ro9/not24/b_inferred/a
+      : crores/ro9/not24/a
+      : crores/ro9/tem_inferred__0/out[10]
+      : crores/ro9/tem_inferred__0/in0[10]
+      : crores/ro9/tem_inferred/out[10]
+      : crores/ro9/tem_inferred/in0[10]
+      : crores/ro9/tem_inferred__0/out[9]
+      : crores/ro9/tem_inferred__0/in0[9]
+      : crores/ro9/tem_inferred/out[9]
+      : crores/ro9/tem_inferred/in0[9]
+      : crores/ro9/not23/b
+      : crores/ro9/not23/b_inferred/b
+      : crores/ro9/not23/b_inferred/a
+      : crores/ro9/not23/a
+      : crores/ro9/tem_inferred__0/out[7]
+      : crores/ro9/tem_inferred__0/in0[7]
+      : crores/ro9/tem_inferred/out[7]
+      : crores/ro9/tem_inferred/in0[7]
+      : crores/ro9/tem_inferred__0/out[6]
+      : crores/ro9/tem_inferred__0/in0[6]
+      : crores/ro9/tem_inferred/out[6]
+      : crores/ro9/tem_inferred/in0[6]
+      : crores/ro9/not22/b
+      : crores/ro9/not22/b_inferred/b
+      : crores/ro9/not22/b_inferred/a
+      : crores/ro9/not22/a
+      : crores/ro9/tem_inferred__0/out[4]
+      : crores/ro9/tem_inferred__0/in0[4]
+      : crores/ro9/tem_inferred/out[4]
+      : crores/ro9/tem_inferred/in0[4]
+      : crores/ro9/tem_inferred__0/out[3]
+      : crores/ro9/tem_inferred__0/in0[3]
+      : crores/ro9/tem_inferred/out[3]
+      : crores/ro9/tem_inferred/in0[3]
+      : crores/ro9/not21/b
+      : crores/ro9/not21/b_inferred/b
+      : crores/ro9/not21/b_inferred/a
+      : crores/ro9/not21/a
+      : crores/ro9/tem_inferred__0/out[1]
+      : crores/ro9/tem_inferred__0/in0[1]
+      : crores/ro9/tem_inferred/out[1]
+      : crores/ro9/tem_inferred/in0[1]
+      : crores/ro9/and1/c
+      : crores/ro9/and1/c_inferred/c
+      : crores/ro9/and1/c_inferred/b
+      : crores/ro9/and1/b
+      : crores/ro9/tem_inferred__0/out[0]
+      : crores/ro9/tem_inferred__0/in0[0]
+      : crores/ro9/tem_inferred/out[0]
+      : crores/ro9/tem_inferred/in0[0]
+      : crores/ro8/tem_inferred__0/out[15]
+      : crores/ro8/tem_inferred__0/in0[15]
+      : crores/ro8/tem_inferred/out[15]
+      : crores/ro8/tem_inferred/in0[15]
+      : crores/ro8/not25/b
+      : crores/ro8/not25/b_inferred/b
+      : crores/ro8/not25/b_inferred/a
+      : crores/ro8/not25/a
+      : crores/ro8/tem_inferred__0/out[13]
+      : crores/ro8/tem_inferred__0/in0[13]
+      : crores/ro8/tem_inferred/out[13]
+      : crores/ro8/tem_inferred/in0[13]
+      : crores/ro8/tem_inferred__0/out[12]
+      : crores/ro8/tem_inferred__0/in0[12]
+      : crores/ro8/tem_inferred/out[12]
+      : crores/ro8/tem_inferred/in0[12]
+      : crores/ro8/not24/b
+      : crores/ro8/not24/b_inferred/b
+      : crores/ro8/not24/b_inferred/a
+      : crores/ro8/not24/a
+      : crores/ro8/tem_inferred__0/out[10]
+      : crores/ro8/tem_inferred__0/in0[10]
+      : crores/ro8/tem_inferred/out[10]
+      : crores/ro8/tem_inferred/in0[10]
+      : crores/ro8/tem_inferred__0/out[9]
+      : crores/ro8/tem_inferred__0/in0[9]
+      : crores/ro8/tem_inferred/out[9]
+      : crores/ro8/tem_inferred/in0[9]
+      : crores/ro8/not23/b
+      : crores/ro8/not23/b_inferred/b
+      : crores/ro8/not23/b_inferred/a
+      : crores/ro8/not23/a
+      : crores/ro8/tem_inferred__0/out[7]
+      : crores/ro8/tem_inferred__0/in0[7]
+      : crores/ro8/tem_inferred/out[7]
+      : crores/ro8/tem_inferred/in0[7]
+      : crores/ro8/tem_inferred__0/out[6]
+      : crores/ro8/tem_inferred__0/in0[6]
+      : crores/ro8/tem_inferred/out[6]
+      : crores/ro8/tem_inferred/in0[6]
+      : crores/ro8/not22/b
+      : crores/ro8/not22/b_inferred/b
+      : crores/ro8/not22/b_inferred/a
+      : crores/ro8/not22/a
+      : crores/ro8/tem_inferred__0/out[4]
+      : crores/ro8/tem_inferred__0/in0[4]
+      : crores/ro8/tem_inferred/out[4]
+      : crores/ro8/tem_inferred/in0[4]
+      : crores/ro8/tem_inferred__0/out[3]
+      : crores/ro8/tem_inferred__0/in0[3]
+      : crores/ro8/tem_inferred/out[3]
+      : crores/ro8/tem_inferred/in0[3]
+      : crores/ro8/not21/b
+      : crores/ro8/not21/b_inferred/b
+      : crores/ro8/not21/b_inferred/a
+      : crores/ro8/not21/a
+      : crores/ro8/tem_inferred__0/out[1]
+      : crores/ro8/tem_inferred__0/in0[1]
+      : crores/ro8/tem_inferred/out[1]
+      : crores/ro8/tem_inferred/in0[1]
+      : crores/ro8/and1/c
+      : crores/ro8/and1/c_inferred/c
+      : crores/ro8/and1/c_inferred/b
+      : crores/ro8/and1/b
+      : crores/ro8/tem_inferred__0/out[0]
+      : crores/ro8/tem_inferred__0/in0[0]
+      : crores/ro8/tem_inferred/out[0]
+      : crores/ro8/tem_inferred/in0[0]
+      : crores/ro7/tem_inferred__0/out[15]
+      : crores/ro7/tem_inferred__0/in0[15]
+      : crores/ro7/tem_inferred/out[15]
+      : crores/ro7/tem_inferred/in0[15]
+      : crores/ro7/not25/b
+      : crores/ro7/not25/b_inferred/b
+      : crores/ro7/not25/b_inferred/a
+      : crores/ro7/not25/a
+      : crores/ro7/tem_inferred__0/out[13]
+      : crores/ro7/tem_inferred__0/in0[13]
+      : crores/ro7/tem_inferred/out[13]
+      : crores/ro7/tem_inferred/in0[13]
+      : crores/ro7/tem_inferred__0/out[12]
+      : crores/ro7/tem_inferred__0/in0[12]
+      : crores/ro7/tem_inferred/out[12]
+      : crores/ro7/tem_inferred/in0[12]
+      : crores/ro7/not24/b
+      : crores/ro7/not24/b_inferred/b
+      : crores/ro7/not24/b_inferred/a
+      : crores/ro7/not24/a
+      : crores/ro7/tem_inferred__0/out[10]
+      : crores/ro7/tem_inferred__0/in0[10]
+      : crores/ro7/tem_inferred/out[10]
+      : crores/ro7/tem_inferred/in0[10]
+      : crores/ro7/tem_inferred__0/out[9]
+      : crores/ro7/tem_inferred__0/in0[9]
+      : crores/ro7/tem_inferred/out[9]
+      : crores/ro7/tem_inferred/in0[9]
+      : crores/ro7/not23/b
+      : crores/ro7/not23/b_inferred/b
+      : crores/ro7/not23/b_inferred/a
+      : crores/ro7/not23/a
+      : crores/ro7/tem_inferred__0/out[7]
+      : crores/ro7/tem_inferred__0/in0[7]
+      : crores/ro7/tem_inferred/out[7]
+      : crores/ro7/tem_inferred/in0[7]
+      : crores/ro7/tem_inferred__0/out[6]
+      : crores/ro7/tem_inferred__0/in0[6]
+      : crores/ro7/tem_inferred/out[6]
+      : crores/ro7/tem_inferred/in0[6]
+      : crores/ro7/not22/b
+      : crores/ro7/not22/b_inferred/b
+      : crores/ro7/not22/b_inferred/a
+      : crores/ro7/not22/a
+      : crores/ro7/tem_inferred__0/out[4]
+      : crores/ro7/tem_inferred__0/in0[4]
+      : crores/ro7/tem_inferred/out[4]
+      : crores/ro7/tem_inferred/in0[4]
+      : crores/ro7/tem_inferred__0/out[3]
+      : crores/ro7/tem_inferred__0/in0[3]
+      : crores/ro7/tem_inferred/out[3]
+      : crores/ro7/tem_inferred/in0[3]
+      : crores/ro7/not21/b
+      : crores/ro7/not21/b_inferred/b
+      : crores/ro7/not21/b_inferred/a
+      : crores/ro7/not21/a
+      : crores/ro7/tem_inferred__0/out[1]
+      : crores/ro7/tem_inferred__0/in0[1]
+      : crores/ro7/tem_inferred/out[1]
+      : crores/ro7/tem_inferred/in0[1]
+      : crores/ro7/and1/c
+      : crores/ro7/and1/c_inferred/c
+      : crores/ro7/and1/c_inferred/b
+      : crores/ro7/and1/b
+      : crores/ro7/tem_inferred__0/out[0]
+      : crores/ro7/tem_inferred__0/in0[0]
+      : crores/ro7/tem_inferred/out[0]
+      : crores/ro7/tem_inferred/in0[0]
+      : crores/ro6/tem_inferred__0/out[15]
+      : crores/ro6/tem_inferred__0/in0[15]
+      : crores/ro6/tem_inferred/out[15]
+      : crores/ro6/tem_inferred/in0[15]
+      : crores/ro6/not25/b
+      : crores/ro6/not25/b_inferred/b
+      : crores/ro6/not25/b_inferred/a
+      : crores/ro6/not25/a
+      : crores/ro6/tem_inferred__0/out[13]
+      : crores/ro6/tem_inferred__0/in0[13]
+      : crores/ro6/tem_inferred/out[13]
+      : crores/ro6/tem_inferred/in0[13]
+      : crores/ro6/tem_inferred__0/out[12]
+      : crores/ro6/tem_inferred__0/in0[12]
+      : crores/ro6/tem_inferred/out[12]
+      : crores/ro6/tem_inferred/in0[12]
+      : crores/ro6/not24/b
+      : crores/ro6/not24/b_inferred/b
+      : crores/ro6/not24/b_inferred/a
+      : crores/ro6/not24/a
+      : crores/ro6/tem_inferred__0/out[10]
+      : crores/ro6/tem_inferred__0/in0[10]
+      : crores/ro6/tem_inferred/out[10]
+      : crores/ro6/tem_inferred/in0[10]
+      : crores/ro6/tem_inferred__0/out[9]
+      : crores/ro6/tem_inferred__0/in0[9]
+      : crores/ro6/tem_inferred/out[9]
+      : crores/ro6/tem_inferred/in0[9]
+      : crores/ro6/not23/b
+      : crores/ro6/not23/b_inferred/b
+      : crores/ro6/not23/b_inferred/a
+      : crores/ro6/not23/a
+      : crores/ro6/tem_inferred__0/out[7]
+      : crores/ro6/tem_inferred__0/in0[7]
+      : crores/ro6/tem_inferred/out[7]
+      : crores/ro6/tem_inferred/in0[7]
+      : crores/ro6/tem_inferred__0/out[6]
+      : crores/ro6/tem_inferred__0/in0[6]
+      : crores/ro6/tem_inferred/out[6]
+      : crores/ro6/tem_inferred/in0[6]
+      : crores/ro6/not22/b
+      : crores/ro6/not22/b_inferred/b
+      : crores/ro6/not22/b_inferred/a
+      : crores/ro6/not22/a
+      : crores/ro6/tem_inferred__0/out[4]
+      : crores/ro6/tem_inferred__0/in0[4]
+      : crores/ro6/tem_inferred/out[4]
+      : crores/ro6/tem_inferred/in0[4]
+      : crores/ro6/tem_inferred__0/out[3]
+      : crores/ro6/tem_inferred__0/in0[3]
+      : crores/ro6/tem_inferred/out[3]
+      : crores/ro6/tem_inferred/in0[3]
+      : crores/ro6/not21/b
+      : crores/ro6/not21/b_inferred/b
+      : crores/ro6/not21/b_inferred/a
+      : crores/ro6/not21/a
+      : crores/ro6/tem_inferred__0/out[1]
+      : crores/ro6/tem_inferred__0/in0[1]
+      : crores/ro6/tem_inferred/out[1]
+      : crores/ro6/tem_inferred/in0[1]
+      : crores/ro6/and1/c
+      : crores/ro6/and1/c_inferred/c
+      : crores/ro6/and1/c_inferred/b
+      : crores/ro6/and1/b
+      : crores/ro6/tem_inferred__0/out[0]
+      : crores/ro6/tem_inferred__0/in0[0]
+      : crores/ro6/tem_inferred/out[0]
+      : crores/ro6/tem_inferred/in0[0]
+      : crores/ro5/tem_inferred__0/out[15]
+      : crores/ro5/tem_inferred__0/in0[15]
+      : crores/ro5/tem_inferred/out[15]
+      : crores/ro5/tem_inferred/in0[15]
+      : crores/ro5/not25/b
+      : crores/ro5/not25/b_inferred/b
+      : crores/ro5/not25/b_inferred/a
+      : crores/ro5/not25/a
+      : crores/ro5/tem_inferred__0/out[13]
+      : crores/ro5/tem_inferred__0/in0[13]
+      : crores/ro5/tem_inferred/out[13]
+      : crores/ro5/tem_inferred/in0[13]
+      : crores/ro5/tem_inferred__0/out[12]
+      : crores/ro5/tem_inferred__0/in0[12]
+      : crores/ro5/tem_inferred/out[12]
+      : crores/ro5/tem_inferred/in0[12]
+      : crores/ro5/not24/b
+      : crores/ro5/not24/b_inferred/b
+      : crores/ro5/not24/b_inferred/a
+      : crores/ro5/not24/a
+      : crores/ro5/tem_inferred__0/out[10]
+      : crores/ro5/tem_inferred__0/in0[10]
+      : crores/ro5/tem_inferred/out[10]
+      : crores/ro5/tem_inferred/in0[10]
+      : crores/ro5/tem_inferred__0/out[9]
+      : crores/ro5/tem_inferred__0/in0[9]
+      : crores/ro5/tem_inferred/out[9]
+      : crores/ro5/tem_inferred/in0[9]
+      : crores/ro5/not23/b
+      : crores/ro5/not23/b_inferred/b
+      : crores/ro5/not23/b_inferred/a
+      : crores/ro5/not23/a
+      : crores/ro5/tem_inferred__0/out[7]
+      : crores/ro5/tem_inferred__0/in0[7]
+      : crores/ro5/tem_inferred/out[7]
+      : crores/ro5/tem_inferred/in0[7]
+      : crores/ro5/tem_inferred__0/out[6]
+      : crores/ro5/tem_inferred__0/in0[6]
+      : crores/ro5/tem_inferred/out[6]
+      : crores/ro5/tem_inferred/in0[6]
+      : crores/ro5/not22/b
+      : crores/ro5/not22/b_inferred/b
+      : crores/ro5/not22/b_inferred/a
+      : crores/ro5/not22/a
+      : crores/ro5/tem_inferred__0/out[4]
+      : crores/ro5/tem_inferred__0/in0[4]
+      : crores/ro5/tem_inferred/out[4]
+      : crores/ro5/tem_inferred/in0[4]
+      : crores/ro5/tem_inferred__0/out[3]
+      : crores/ro5/tem_inferred__0/in0[3]
+      : crores/ro5/tem_inferred/out[3]
+      : crores/ro5/tem_inferred/in0[3]
+      : crores/ro5/not21/b
+      : crores/ro5/not21/b_inferred/b
+      : crores/ro5/not21/b_inferred/a
+      : crores/ro5/not21/a
+      : crores/ro5/tem_inferred__0/out[1]
+      : crores/ro5/tem_inferred__0/in0[1]
+      : crores/ro5/tem_inferred/out[1]
+      : crores/ro5/tem_inferred/in0[1]
+      : crores/ro5/and1/c
+      : crores/ro5/and1/c_inferred/c
+      : crores/ro5/and1/c_inferred/b
+      : crores/ro5/and1/b
+      : crores/ro5/tem_inferred__0/out[0]
+      : crores/ro5/tem_inferred__0/in0[0]
+      : crores/ro5/tem_inferred/out[0]
+      : crores/ro5/tem_inferred/in0[0]
+      : crores/ro4/tem_inferred__0/out[15]
+      : crores/ro4/tem_inferred__0/in0[15]
+      : crores/ro4/tem_inferred/out[15]
+      : crores/ro4/tem_inferred/in0[15]
+      : crores/ro4/not25/b
+      : crores/ro4/not25/b_inferred/b
+      : crores/ro4/not25/b_inferred/a
+      : crores/ro4/not25/a
+      : crores/ro4/tem_inferred__0/out[13]
+      : crores/ro4/tem_inferred__0/in0[13]
+      : crores/ro4/tem_inferred/out[13]
+      : crores/ro4/tem_inferred/in0[13]
+      : crores/ro4/tem_inferred__0/out[12]
+      : crores/ro4/tem_inferred__0/in0[12]
+      : crores/ro4/tem_inferred/out[12]
+      : crores/ro4/tem_inferred/in0[12]
+      : crores/ro4/not24/b
+      : crores/ro4/not24/b_inferred/b
+      : crores/ro4/not24/b_inferred/a
+      : crores/ro4/not24/a
+      : crores/ro4/tem_inferred__0/out[10]
+      : crores/ro4/tem_inferred__0/in0[10]
+      : crores/ro4/tem_inferred/out[10]
+      : crores/ro4/tem_inferred/in0[10]
+      : crores/ro4/tem_inferred__0/out[9]
+      : crores/ro4/tem_inferred__0/in0[9]
+      : crores/ro4/tem_inferred/out[9]
+      : crores/ro4/tem_inferred/in0[9]
+      : crores/ro4/not23/b
+      : crores/ro4/not23/b_inferred/b
+      : crores/ro4/not23/b_inferred/a
+      : crores/ro4/not23/a
+      : crores/ro4/tem_inferred__0/out[7]
+      : crores/ro4/tem_inferred__0/in0[7]
+      : crores/ro4/tem_inferred/out[7]
+      : crores/ro4/tem_inferred/in0[7]
+      : crores/ro4/tem_inferred__0/out[6]
+      : crores/ro4/tem_inferred__0/in0[6]
+      : crores/ro4/tem_inferred/out[6]
+      : crores/ro4/tem_inferred/in0[6]
+      : crores/ro4/not22/b
+      : crores/ro4/not22/b_inferred/b
+      : crores/ro4/not22/b_inferred/a
+      : crores/ro4/not22/a
+      : crores/ro4/tem_inferred__0/out[4]
+      : crores/ro4/tem_inferred__0/in0[4]
+      : crores/ro4/tem_inferred/out[4]
+      : crores/ro4/tem_inferred/in0[4]
+      : crores/ro4/tem_inferred__0/out[3]
+      : crores/ro4/tem_inferred__0/in0[3]
+      : crores/ro4/tem_inferred/out[3]
+      : crores/ro4/tem_inferred/in0[3]
+      : crores/ro4/not21/b
+      : crores/ro4/not21/b_inferred/b
+      : crores/ro4/not21/b_inferred/a
+      : crores/ro4/not21/a
+      : crores/ro4/tem_inferred__0/out[1]
+      : crores/ro4/tem_inferred__0/in0[1]
+      : crores/ro4/tem_inferred/out[1]
+      : crores/ro4/tem_inferred/in0[1]
+      : crores/ro4/and1/c
+      : crores/ro4/and1/c_inferred/c
+      : crores/ro4/and1/c_inferred/b
+      : crores/ro4/and1/b
+      : crores/ro4/tem_inferred__0/out[0]
+      : crores/ro4/tem_inferred__0/in0[0]
+      : crores/ro4/tem_inferred/out[0]
+      : crores/ro4/tem_inferred/in0[0]
+      : crores/ro3/tem_inferred__0/out[15]
+      : crores/ro3/tem_inferred__0/in0[15]
+      : crores/ro3/tem_inferred/out[15]
+      : crores/ro3/tem_inferred/in0[15]
+      : crores/ro3/not25/b
+      : crores/ro3/not25/b_inferred/b
+      : crores/ro3/not25/b_inferred/a
+      : crores/ro3/not25/a
+      : crores/ro3/tem_inferred__0/out[13]
+      : crores/ro3/tem_inferred__0/in0[13]
+      : crores/ro3/tem_inferred/out[13]
+      : crores/ro3/tem_inferred/in0[13]
+      : crores/ro3/tem_inferred__0/out[12]
+      : crores/ro3/tem_inferred__0/in0[12]
+      : crores/ro3/tem_inferred/out[12]
+      : crores/ro3/tem_inferred/in0[12]
+      : crores/ro3/not24/b
+      : crores/ro3/not24/b_inferred/b
+      : crores/ro3/not24/b_inferred/a
+      : crores/ro3/not24/a
+      : crores/ro3/tem_inferred__0/out[10]
+      : crores/ro3/tem_inferred__0/in0[10]
+      : crores/ro3/tem_inferred/out[10]
+      : crores/ro3/tem_inferred/in0[10]
+      : crores/ro3/tem_inferred__0/out[9]
+      : crores/ro3/tem_inferred__0/in0[9]
+      : crores/ro3/tem_inferred/out[9]
+      : crores/ro3/tem_inferred/in0[9]
+      : crores/ro3/not23/b
+      : crores/ro3/not23/b_inferred/b
+      : crores/ro3/not23/b_inferred/a
+      : crores/ro3/not23/a
+      : crores/ro3/tem_inferred__0/out[7]
+      : crores/ro3/tem_inferred__0/in0[7]
+      : crores/ro3/tem_inferred/out[7]
+      : crores/ro3/tem_inferred/in0[7]
+      : crores/ro3/tem_inferred__0/out[6]
+      : crores/ro3/tem_inferred__0/in0[6]
+      : crores/ro3/tem_inferred/out[6]
+      : crores/ro3/tem_inferred/in0[6]
+      : crores/ro3/not22/b
+      : crores/ro3/not22/b_inferred/b
+      : crores/ro3/not22/b_inferred/a
+      : crores/ro3/not22/a
+      : crores/ro3/tem_inferred__0/out[4]
+      : crores/ro3/tem_inferred__0/in0[4]
+      : crores/ro3/tem_inferred/out[4]
+      : crores/ro3/tem_inferred/in0[4]
+      : crores/ro3/tem_inferred__0/out[3]
+      : crores/ro3/tem_inferred__0/in0[3]
+      : crores/ro3/tem_inferred/out[3]
+      : crores/ro3/tem_inferred/in0[3]
+      : crores/ro3/not21/b
+      : crores/ro3/not21/b_inferred/b
+      : crores/ro3/not21/b_inferred/a
+      : crores/ro3/not21/a
+      : crores/ro3/tem_inferred__0/out[1]
+      : crores/ro3/tem_inferred__0/in0[1]
+      : crores/ro3/tem_inferred/out[1]
+      : crores/ro3/tem_inferred/in0[1]
+      : crores/ro3/and1/c
+      : crores/ro3/and1/c_inferred/c
+      : crores/ro3/and1/c_inferred/b
+      : crores/ro3/and1/b
+      : crores/ro3/tem_inferred__0/out[0]
+      : crores/ro3/tem_inferred__0/in0[0]
+      : crores/ro3/tem_inferred/out[0]
+      : crores/ro3/tem_inferred/in0[0]
+      : crores/ro2/tem_inferred__0/out[15]
+      : crores/ro2/tem_inferred__0/in0[15]
+      : crores/ro2/tem_inferred/out[15]
+      : crores/ro2/tem_inferred/in0[15]
+      : crores/ro2/not25/b
+      : crores/ro2/not25/b_inferred/b
+      : crores/ro2/not25/b_inferred/a
+      : crores/ro2/not25/a
+      : crores/ro2/tem_inferred__0/out[13]
+      : crores/ro2/tem_inferred__0/in0[13]
+      : crores/ro2/tem_inferred/out[13]
+      : crores/ro2/tem_inferred/in0[13]
+      : crores/ro2/tem_inferred__0/out[12]
+      : crores/ro2/tem_inferred__0/in0[12]
+      : crores/ro2/tem_inferred/out[12]
+      : crores/ro2/tem_inferred/in0[12]
+      : crores/ro2/not24/b
+      : crores/ro2/not24/b_inferred/b
+      : crores/ro2/not24/b_inferred/a
+      : crores/ro2/not24/a
+      : crores/ro2/tem_inferred__0/out[10]
+      : crores/ro2/tem_inferred__0/in0[10]
+      : crores/ro2/tem_inferred/out[10]
+      : crores/ro2/tem_inferred/in0[10]
+      : crores/ro2/tem_inferred__0/out[9]
+      : crores/ro2/tem_inferred__0/in0[9]
+      : crores/ro2/tem_inferred/out[9]
+      : crores/ro2/tem_inferred/in0[9]
+      : crores/ro2/not23/b
+      : crores/ro2/not23/b_inferred/b
+      : crores/ro2/not23/b_inferred/a
+      : crores/ro2/not23/a
+      : crores/ro2/tem_inferred__0/out[7]
+      : crores/ro2/tem_inferred__0/in0[7]
+      : crores/ro2/tem_inferred/out[7]
+      : crores/ro2/tem_inferred/in0[7]
+      : crores/ro2/tem_inferred__0/out[6]
+      : crores/ro2/tem_inferred__0/in0[6]
+      : crores/ro2/tem_inferred/out[6]
+      : crores/ro2/tem_inferred/in0[6]
+      : crores/ro2/not22/b
+      : crores/ro2/not22/b_inferred/b
+      : crores/ro2/not22/b_inferred/a
+      : crores/ro2/not22/a
+      : crores/ro2/tem_inferred__0/out[4]
+      : crores/ro2/tem_inferred__0/in0[4]
+      : crores/ro2/tem_inferred/out[4]
+      : crores/ro2/tem_inferred/in0[4]
+      : crores/ro2/tem_inferred__0/out[3]
+      : crores/ro2/tem_inferred__0/in0[3]
+      : crores/ro2/tem_inferred/out[3]
+      : crores/ro2/tem_inferred/in0[3]
+      : crores/ro2/not21/b
+      : crores/ro2/not21/b_inferred/b
+      : crores/ro2/not21/b_inferred/a
+      : crores/ro2/not21/a
+      : crores/ro2/tem_inferred__0/out[1]
+      : crores/ro2/tem_inferred__0/in0[1]
+      : crores/ro2/tem_inferred/out[1]
+      : crores/ro2/tem_inferred/in0[1]
+      : crores/ro2/and1/c
+      : crores/ro2/and1/c_inferred/c
+      : crores/ro2/and1/c_inferred/b
+      : crores/ro2/and1/b
+      : crores/ro2/tem_inferred__0/out[0]
+      : crores/ro2/tem_inferred__0/in0[0]
+      : crores/ro2/tem_inferred/out[0]
+      : crores/ro2/tem_inferred/in0[0]
+      : crores/ro1/tem_inferred__0/out[15]
+      : crores/ro1/tem_inferred__0/in0[15]
+      : crores/ro1/tem_inferred/out[15]
+      : crores/ro1/tem_inferred/in0[15]
+      : crores/ro1/not25/b
+      : crores/ro1/not25/b_inferred/b
+      : crores/ro1/not25/b_inferred/a
+      : crores/ro1/not25/a
+      : crores/ro1/tem_inferred__0/out[13]
+      : crores/ro1/tem_inferred__0/in0[13]
+      : crores/ro1/tem_inferred/out[13]
+      : crores/ro1/tem_inferred/in0[13]
+      : crores/ro1/tem_inferred__0/out[12]
+      : crores/ro1/tem_inferred__0/in0[12]
+      : crores/ro1/tem_inferred/out[12]
+      : crores/ro1/tem_inferred/in0[12]
+      : crores/ro1/not24/b
+      : crores/ro1/not24/b_inferred/b
+      : crores/ro1/not24/b_inferred/a
+      : crores/ro1/not24/a
+      : crores/ro1/tem_inferred__0/out[10]
+      : crores/ro1/tem_inferred__0/in0[10]
+      : crores/ro1/tem_inferred/out[10]
+      : crores/ro1/tem_inferred/in0[10]
+      : crores/ro1/tem_inferred__0/out[9]
+      : crores/ro1/tem_inferred__0/in0[9]
+      : crores/ro1/tem_inferred/out[9]
+      : crores/ro1/tem_inferred/in0[9]
+      : crores/ro1/not23/b
+      : crores/ro1/not23/b_inferred/b
+      : crores/ro1/not23/b_inferred/a
+      : crores/ro1/not23/a
+      : crores/ro1/tem_inferred__0/out[7]
+      : crores/ro1/tem_inferred__0/in0[7]
+      : crores/ro1/tem_inferred/out[7]
+      : crores/ro1/tem_inferred/in0[7]
+      : crores/ro1/tem_inferred__0/out[6]
+      : crores/ro1/tem_inferred__0/in0[6]
+      : crores/ro1/tem_inferred/out[6]
+      : crores/ro1/tem_inferred/in0[6]
+      : crores/ro1/not22/b
+      : crores/ro1/not22/b_inferred/b
+      : crores/ro1/not22/b_inferred/a
+      : crores/ro1/not22/a
+      : crores/ro1/tem_inferred__0/out[4]
+      : crores/ro1/tem_inferred__0/in0[4]
+      : crores/ro1/tem_inferred/out[4]
+      : crores/ro1/tem_inferred/in0[4]
+      : crores/ro1/tem_inferred__0/out[3]
+      : crores/ro1/tem_inferred__0/in0[3]
+      : crores/ro1/tem_inferred/out[3]
+      : crores/ro1/tem_inferred/in0[3]
+      : crores/ro1/not21/b
+      : crores/ro1/not21/b_inferred/b
+      : crores/ro1/not21/b_inferred/a
+      : crores/ro1/not21/a
+      : crores/ro1/tem_inferred__0/out[1]
+      : crores/ro1/tem_inferred__0/in0[1]
+      : crores/ro1/tem_inferred/out[1]
+      : crores/ro1/tem_inferred/in0[1]
+      : crores/ro1/and1/c
+      : crores/ro1/and1/c_inferred/c
+      : crores/ro1/and1/c_inferred/b
+      : crores/ro1/and1/b
+      : crores/ro1/tem_inferred__0/out[0]
+      : crores/ro1/tem_inferred__0/in0[0]
+      : crores/ro1/tem_inferred/out[0]
+      : crores/ro1/tem_inferred/in0[0]
+      : crores/ro0/tem_inferred__0/out[15]
+      : crores/ro0/tem_inferred__0/in0[15]
+      : crores/ro0/tem_inferred/out[15]
+      : crores/ro0/tem_inferred/in0[15]
+      : crores/ro0/not25/b
+      : crores/ro0/not25/b_inferred/b
+      : crores/ro0/not25/b_inferred/a
+      : crores/ro0/not25/a
+      : crores/ro0/tem_inferred__0/out[13]
+      : crores/ro0/tem_inferred__0/in0[13]
+      : crores/ro0/tem_inferred/out[13]
+      : crores/ro0/tem_inferred/in0[13]
+      : crores/ro0/tem_inferred__0/out[12]
+      : crores/ro0/tem_inferred__0/in0[12]
+      : crores/ro0/tem_inferred/out[12]
+      : crores/ro0/tem_inferred/in0[12]
+      : crores/ro0/not24/b
+      : crores/ro0/not24/b_inferred/b
+      : crores/ro0/not24/b_inferred/a
+      : crores/ro0/not24/a
+      : crores/ro0/tem_inferred__0/out[10]
+      : crores/ro0/tem_inferred__0/in0[10]
+      : crores/ro0/tem_inferred/out[10]
+      : crores/ro0/tem_inferred/in0[10]
+      : crores/ro0/tem_inferred__0/out[9]
+      : crores/ro0/tem_inferred__0/in0[9]
+      : crores/ro0/tem_inferred/out[9]
+      : crores/ro0/tem_inferred/in0[9]
+      : crores/ro0/not23/b
+      : crores/ro0/not23/b_inferred/b
+      : crores/ro0/not23/b_inferred/a
+      : crores/ro0/not23/a
+      : crores/ro0/tem_inferred__0/out[7]
+      : crores/ro0/tem_inferred__0/in0[7]
+      : crores/ro0/tem_inferred/out[7]
+      : crores/ro0/tem_inferred/in0[7]
+      : crores/ro0/tem_inferred__0/out[6]
+      : crores/ro0/tem_inferred__0/in0[6]
+      : crores/ro0/tem_inferred/out[6]
+      : crores/ro0/tem_inferred/in0[6]
+      : crores/ro0/not22/b
+      : crores/ro0/not22/b_inferred/b
+      : crores/ro0/not22/b_inferred/a
+      : crores/ro0/not22/a
+      : crores/ro0/tem_inferred__0/out[4]
+      : crores/ro0/tem_inferred__0/in0[4]
+      : crores/ro0/tem_inferred/out[4]
+      : crores/ro0/tem_inferred/in0[4]
+      : crores/ro0/tem_inferred__0/out[3]
+      : crores/ro0/tem_inferred__0/in0[3]
+      : crores/ro0/tem_inferred/out[3]
+      : crores/ro0/tem_inferred/in0[3]
+      : crores/ro0/not21/b
+      : crores/ro0/not21/b_inferred/b
+      : crores/ro0/not21/b_inferred/a
+      : crores/ro0/not21/a
+      : crores/ro0/tem_inferred__0/out[1]
+      : crores/ro0/tem_inferred__0/in0[1]
+      : crores/ro0/tem_inferred/out[1]
+      : crores/ro0/tem_inferred/in0[1]
+      : crores/ro0/and1/c
+      : crores/ro0/and1/c_inferred/c
+      : crores/ro0/and1/c_inferred/b
+      : crores/ro0/and1/b
+      : crores/ro0/tem_inferred__0/out[0]
+      : crores/ro0/tem_inferred__0/in0[0]
+      : crores/ro0/tem_inferred/out[0]
+      : crores/ro0/tem_inferred/in0[0]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro15/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro14/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro13/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro12/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro11/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro10/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro9/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro8/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro7/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro6/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro5/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro4/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro3/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro2/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro1/not15/b_inferred/i_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through crores/ro0/not15/b_inferred/i_0/O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro0/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro1/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro2/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro3/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro4/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro5/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro6/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro7/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro8/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro9/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro10/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro11/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro12/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro13/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro14/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro15/not15/b_inferred/i_0' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 777 ; free virtual = 2046
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro0/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro1/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro2/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro3/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro4/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro5/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro6/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro7/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro8/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro9/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro10/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro11/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro12/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro13/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro14/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro15/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro0/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro1/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro2/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro3/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro4/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro5/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro6/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro7/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro8/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro9/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro10/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro11/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro12/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro13/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro14/not15/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'crores/ro15/not15/i_0' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 762 ; free virtual = 2031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin ncount2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin Q_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin Qn_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin Qend_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin temp_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:326]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:139]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:39]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:76]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:76]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:171]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:171]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:171]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:254]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:130]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:289]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:289]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:289]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v:289]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd:101]
+INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5410] Found another clock driver uartbuf:O [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:100]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 576 ; free virtual = 1845
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 575 ; free virtual = 1844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 578 ; free virtual = 1847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 578 ; free virtual = 1847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 570 ; free virtual = 1839
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 612 ; free virtual = 1881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     6|
+|2     |BUFGCE     |     1|
+|3     |BUFGMUX    |     2|
+|4     |CARRY4     |    43|
+|5     |LUT1       |   186|
+|6     |LUT2       |    37|
+|7     |LUT3       |    26|
+|8     |LUT4       |    41|
+|9     |LUT5       |    19|
+|10    |LUT6       |    56|
+|11    |MUXF7      |    95|
+|12    |MUXF8      |     1|
+|13    |PLLE2_BASE |     2|
+|14    |FDRE       |   390|
+|15    |FDSE       |    10|
+|16    |LD         |    74|
+|17    |LDC        |     1|
+|18    |IBUF       |     2|
+|19    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------------+------+
+|      |Instance         |Module           |Cells |
++------+-----------------+-----------------+------+
+|1     |top              |                 |  1010|
+|2     |  crores         |cro              |   285|
+|3     |    ro0          |rohmDRC__1       |    16|
+|4     |      and1       |andga__1         |     1|
+|5     |      not11      |notga__19        |     1|
+|6     |      not21      |notga__18        |     1|
+|7     |      not12      |notga__17        |     1|
+|8     |      not22      |notga__16        |     1|
+|9     |      not13      |notga__15        |     1|
+|10    |      not23      |notga__14        |     1|
+|11    |      not14      |notga__13        |     1|
+|12    |      not24      |notga__12        |     1|
+|13    |      not15      |notga__11        |     1|
+|14    |      not25      |notga__10        |     1|
+|15    |    ro1          |rohmDRC__2       |    16|
+|16    |      and1       |andga__2         |     1|
+|17    |      not11      |notga__29        |     1|
+|18    |      not21      |notga__28        |     1|
+|19    |      not12      |notga__27        |     1|
+|20    |      not22      |notga__26        |     1|
+|21    |      not13      |notga__25        |     1|
+|22    |      not23      |notga__24        |     1|
+|23    |      not14      |notga__23        |     1|
+|24    |      not24      |notga__22        |     1|
+|25    |      not15      |notga__21        |     1|
+|26    |      not25      |notga__20        |     1|
+|27    |    ro2          |rohmDRC__3       |    16|
+|28    |      and1       |andga__3         |     1|
+|29    |      not11      |notga__39        |     1|
+|30    |      not21      |notga__38        |     1|
+|31    |      not12      |notga__37        |     1|
+|32    |      not22      |notga__36        |     1|
+|33    |      not13      |notga__35        |     1|
+|34    |      not23      |notga__34        |     1|
+|35    |      not14      |notga__33        |     1|
+|36    |      not24      |notga__32        |     1|
+|37    |      not15      |notga__31        |     1|
+|38    |      not25      |notga__30        |     1|
+|39    |    ro3          |rohmDRC__4       |    16|
+|40    |      and1       |andga__4         |     1|
+|41    |      not11      |notga__49        |     1|
+|42    |      not21      |notga__48        |     1|
+|43    |      not12      |notga__47        |     1|
+|44    |      not22      |notga__46        |     1|
+|45    |      not13      |notga__45        |     1|
+|46    |      not23      |notga__44        |     1|
+|47    |      not14      |notga__43        |     1|
+|48    |      not24      |notga__42        |     1|
+|49    |      not15      |notga__41        |     1|
+|50    |      not25      |notga__40        |     1|
+|51    |    ro4          |rohmDRC__5       |    16|
+|52    |      and1       |andga__5         |     1|
+|53    |      not11      |notga__59        |     1|
+|54    |      not21      |notga__58        |     1|
+|55    |      not12      |notga__57        |     1|
+|56    |      not22      |notga__56        |     1|
+|57    |      not13      |notga__55        |     1|
+|58    |      not23      |notga__54        |     1|
+|59    |      not14      |notga__53        |     1|
+|60    |      not24      |notga__52        |     1|
+|61    |      not15      |notga__51        |     1|
+|62    |      not25      |notga__50        |     1|
+|63    |    ro5          |rohmDRC__6       |    16|
+|64    |      and1       |andga__6         |     1|
+|65    |      not11      |notga__69        |     1|
+|66    |      not21      |notga__68        |     1|
+|67    |      not12      |notga__67        |     1|
+|68    |      not22      |notga__66        |     1|
+|69    |      not13      |notga__65        |     1|
+|70    |      not23      |notga__64        |     1|
+|71    |      not14      |notga__63        |     1|
+|72    |      not24      |notga__62        |     1|
+|73    |      not15      |notga__61        |     1|
+|74    |      not25      |notga__60        |     1|
+|75    |    ro6          |rohmDRC__7       |    16|
+|76    |      and1       |andga__7         |     1|
+|77    |      not11      |notga__79        |     1|
+|78    |      not21      |notga__78        |     1|
+|79    |      not12      |notga__77        |     1|
+|80    |      not22      |notga__76        |     1|
+|81    |      not13      |notga__75        |     1|
+|82    |      not23      |notga__74        |     1|
+|83    |      not14      |notga__73        |     1|
+|84    |      not24      |notga__72        |     1|
+|85    |      not15      |notga__71        |     1|
+|86    |      not25      |notga__70        |     1|
+|87    |    ro7          |rohmDRC__8       |    16|
+|88    |      and1       |andga__8         |     1|
+|89    |      not11      |notga__89        |     1|
+|90    |      not21      |notga__88        |     1|
+|91    |      not12      |notga__87        |     1|
+|92    |      not22      |notga__86        |     1|
+|93    |      not13      |notga__85        |     1|
+|94    |      not23      |notga__84        |     1|
+|95    |      not14      |notga__83        |     1|
+|96    |      not24      |notga__82        |     1|
+|97    |      not15      |notga__81        |     1|
+|98    |      not25      |notga__80        |     1|
+|99    |    ro8          |rohmDRC__9       |    16|
+|100   |      and1       |andga__9         |     1|
+|101   |      not11      |notga__99        |     1|
+|102   |      not21      |notga__98        |     1|
+|103   |      not12      |notga__97        |     1|
+|104   |      not22      |notga__96        |     1|
+|105   |      not13      |notga__95        |     1|
+|106   |      not23      |notga__94        |     1|
+|107   |      not14      |notga__93        |     1|
+|108   |      not24      |notga__92        |     1|
+|109   |      not15      |notga__91        |     1|
+|110   |      not25      |notga__90        |     1|
+|111   |    ro9          |rohmDRC__10      |    16|
+|112   |      and1       |andga__10        |     1|
+|113   |      not11      |notga__109       |     1|
+|114   |      not21      |notga__108       |     1|
+|115   |      not12      |notga__107       |     1|
+|116   |      not22      |notga__106       |     1|
+|117   |      not13      |notga__105       |     1|
+|118   |      not23      |notga__104       |     1|
+|119   |      not14      |notga__103       |     1|
+|120   |      not24      |notga__102       |     1|
+|121   |      not15      |notga__101       |     1|
+|122   |      not25      |notga__100       |     1|
+|123   |    ro10         |rohmDRC__11      |    16|
+|124   |      and1       |andga__11        |     1|
+|125   |      not11      |notga__119       |     1|
+|126   |      not21      |notga__118       |     1|
+|127   |      not12      |notga__117       |     1|
+|128   |      not22      |notga__116       |     1|
+|129   |      not13      |notga__115       |     1|
+|130   |      not23      |notga__114       |     1|
+|131   |      not14      |notga__113       |     1|
+|132   |      not24      |notga__112       |     1|
+|133   |      not15      |notga__111       |     1|
+|134   |      not25      |notga__110       |     1|
+|135   |    ro11         |rohmDRC__12      |    16|
+|136   |      and1       |andga__12        |     1|
+|137   |      not11      |notga__129       |     1|
+|138   |      not21      |notga__128       |     1|
+|139   |      not12      |notga__127       |     1|
+|140   |      not22      |notga__126       |     1|
+|141   |      not13      |notga__125       |     1|
+|142   |      not23      |notga__124       |     1|
+|143   |      not14      |notga__123       |     1|
+|144   |      not24      |notga__122       |     1|
+|145   |      not15      |notga__121       |     1|
+|146   |      not25      |notga__120       |     1|
+|147   |    ro12         |rohmDRC__13      |    16|
+|148   |      and1       |andga__13        |     1|
+|149   |      not11      |notga__139       |     1|
+|150   |      not21      |notga__138       |     1|
+|151   |      not12      |notga__137       |     1|
+|152   |      not22      |notga__136       |     1|
+|153   |      not13      |notga__135       |     1|
+|154   |      not23      |notga__134       |     1|
+|155   |      not14      |notga__133       |     1|
+|156   |      not24      |notga__132       |     1|
+|157   |      not15      |notga__131       |     1|
+|158   |      not25      |notga__130       |     1|
+|159   |    ro13         |rohmDRC__14      |    16|
+|160   |      and1       |andga__14        |     1|
+|161   |      not11      |notga__149       |     1|
+|162   |      not21      |notga__148       |     1|
+|163   |      not12      |notga__147       |     1|
+|164   |      not22      |notga__146       |     1|
+|165   |      not13      |notga__145       |     1|
+|166   |      not23      |notga__144       |     1|
+|167   |      not14      |notga__143       |     1|
+|168   |      not24      |notga__142       |     1|
+|169   |      not15      |notga__141       |     1|
+|170   |      not25      |notga__140       |     1|
+|171   |    ro14         |rohmDRC__15      |    16|
+|172   |      and1       |andga__15        |     1|
+|173   |      not11      |notga__159       |     1|
+|174   |      not21      |notga__158       |     1|
+|175   |      not12      |notga__157       |     1|
+|176   |      not22      |notga__156       |     1|
+|177   |      not13      |notga__155       |     1|
+|178   |      not23      |notga__154       |     1|
+|179   |      not14      |notga__153       |     1|
+|180   |      not24      |notga__152       |     1|
+|181   |      not15      |notga__151       |     1|
+|182   |      not25      |notga__150       |     1|
+|183   |    ro15         |rohmDRC          |    16|
+|184   |      and1       |andga            |     1|
+|185   |      not11      |notga__1         |     1|
+|186   |      not21      |notga__2         |     1|
+|187   |      not12      |notga__3         |     1|
+|188   |      not22      |notga__4         |     1|
+|189   |      not13      |notga__5         |     1|
+|190   |      not23      |notga__6         |     1|
+|191   |      not14      |notga__7         |     1|
+|192   |      not24      |notga__8         |     1|
+|193   |      not15      |notga__9         |     1|
+|194   |      not25      |notga            |     1|
+|195   |  encro          |enhancedcro      |    12|
+|196   |    uppll        |PLL_BASE__mod__1 |     1|
+|197   |    lowpll       |PLL_BASE__mod    |     1|
+|198   |  sevensegm      |ssdtop           |   268|
+|199   |    ctworo       |ComparetwoRO     |   204|
+|200   |      countforss |Counter          |   200|
+|201   |    ssdis        |ssdisplay        |    14|
+|202   |  uart64         |uartmodDRC       |   249|
+|203   |    transmit     |UART_TXDDRC      |    99|
++------+-----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 612 ; free virtual = 1881
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 208 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1739.352 ; gain = 128.336 ; free physical = 721 ; free virtual = 1990
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1739.352 ; gain = 508.117 ; free physical = 721 ; free virtual = 1990
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  LD => LDCE: 74 instances
+  LDC => LDCE: 1 instances
+  PLLE2_BASE => PLLE2_ADV: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+170 Infos, 186 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:55 . Memory (MB): peak = 1739.352 ; gain = 520.719 ; free physical = 641 ; free virtual = 1910
+INFO: [Common 17-1381] The checkpoint '/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.runs/synth_1/enhancedCROwrap.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file enhancedCROwrap_utilization_synth.rpt -pb enhancedCROwrap_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1763.363 ; gain = 0.000 ; free physical = 623 ; free virtual = 1892
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 06:55:29 2024...

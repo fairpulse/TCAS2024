@@ -1,0 +1,41 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 19071c6f73504fc5b9b68755951cfe2c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_enhancedCROwrap_behav xil_defaultlib.tb_enhancedCROwrap xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 16 for port eni [/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module unisims_ver.BUFGCE_default
+Compiling module xil_defaultlib.andga
+Compiling module xil_defaultlib.notga
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.rohmDRC
+Compiling module xil_defaultlib.cro
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.BUFGCTRL(PRESELECT_I0="TRUE")
+Compiling module unisims_ver.INV
+Compiling module unisims_ver.BUFGMUX
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=10,CLKIN...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=10,CLKI...
+Compiling module xil_defaultlib.PLL_BASE(PERIOD=10)
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.enhancedcro
+Compiling module xil_defaultlib.ssdisplay
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.ComparetwoRO
+Compiling module xil_defaultlib.ssdtop
+Compiling architecture behavioral of entity xil_defaultlib.UART_TXDDRC [uart_txddrc_default]
+Compiling module xil_defaultlib.uartmodDRC
+Compiling module xil_defaultlib.enhancedCROwrap
+Compiling module xil_defaultlib.tb_enhancedCROwrap
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_enhancedCROwrap_behav

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_enhancedCROwrap_behav/xsimk -simmode gui -wdb tb_enhancedCROwrap_behav.wdb -simrunnum 0 -socket 38533
+Design successfully loaded
+Design Loading Memory Usage: 44256 KB (Peak: 44264 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 7334272 KB (Peak: 8178068 KB)
+Simulation CPU Usage: 36560 ms

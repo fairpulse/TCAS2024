@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/ome/sreekanth/Downloads/PLL_BASE.v" \
+"../../../../EnhancedCRO.srcs/sources_1/new/andga.v" \
+"../../../../EnhancedCRO.srcs/sources_1/new/cro.v" \
+"../../../../EnhancedCRO.srcs/sources_1/new/enhancedcro.v" \
+"../../../../EnhancedCRO.srcs/sources_1/new/notga.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/new/rohmDRC.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdisplay.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdtop.v" \
+"../../../../EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v" \
+"../../../../EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v" \
+"../../../../EnhancedCRO.srcs/sim_1/new/tb_enhancedCROwrap.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

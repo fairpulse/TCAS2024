@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ComparetwoRO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/ome/sreekanth/Downloads/PLL_BASE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_BASE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/andga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module andga
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/cro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cro
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedcro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enhancedcro
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/notga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module notga
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/rohmDRC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rohmDRC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ssdisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ssdtop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uartmodDRC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enhancedCROwrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "/opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sim_1/new/tb_enhancedCROwrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_enhancedCROwrap

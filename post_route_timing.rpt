@@ -1,0 +1,370 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sun Nov 10 16:26:24 2024
+| Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_timing -sort_by group -max_paths 100 -path_type summary -file ./EnhancedCRO/post_route_timing.rpt
+| Design       : enhancedCROwrap
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.21 2018-02-08
+--------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Startpoint                     Endpoint                       Slack(ns)     
+----------------------------------------------------------------------------
+FSM_onehot_PS_reg[0]/C         teni_reg[11]/R                 1.788         
+FSM_onehot_PS_reg[0]/C         teni_reg[12]/R                 1.788         
+FSM_onehot_PS_reg[0]/C         teni_reg[13]/R                 1.788         
+FSM_onehot_PS_reg[0]/C         teni_reg[1]/R                  1.835         
+FSM_onehot_PS_reg[0]/C         teni_reg[2]/R                  1.835         
+FSM_onehot_PS_reg[0]/C         teni_reg[3]/R                  1.835         
+FSM_onehot_PS_reg[0]/C         teni_reg[4]/R                  1.839         
+FSM_onehot_PS_reg[0]/C         teni_reg[5]/R                  1.839         
+FSM_onehot_PS_reg[0]/C         teni_reg[6]/R                  1.839         
+FSM_onehot_PS_reg[0]/C         teni_reg[7]/R                  1.839         
+FSM_onehot_PS_reg[12]/C        jr_reg[6]/CE                   1.996         
+FSM_onehot_PS_reg[12]/C        jr_reg[7]/CE                   1.996         
+FSM_onehot_PS_reg[0]/C         teni_reg[10]/R                 1.996         
+FSM_onehot_PS_reg[0]/C         teni_reg[14]/R                 1.996         
+FSM_onehot_PS_reg[0]/C         teni_reg[15]/R                 1.996         
+FSM_onehot_PS_reg[0]/C         teni_reg[8]/R                  1.996         
+FSM_onehot_PS_reg[0]/C         teni_reg[9]/R                  1.996         
+FSM_onehot_PS_reg[1]/C         jr_reg[6]/R                    2.153         
+FSM_onehot_PS_reg[1]/C         jr_reg[7]/R                    2.153         
+FSM_onehot_PS_reg[1]/C         jr_reg[0]/R                    2.189         
+FSM_onehot_PS_reg[1]/C         jr_reg[1]/R                    2.189         
+FSM_onehot_PS_reg[1]/C         jr_reg[3]/R                    2.189         
+FSM_onehot_PS_reg[1]/C         jr_reg[4]/R                    2.189         
+FSM_onehot_PS_reg[1]/C         jr_reg[5]/R                    2.189         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[1]/CE                2.209         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[2]/CE                2.209         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[3]/CE                2.209         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[4]/CE                2.209         
+FSM_onehot_PS_reg[6]/C         teni_reg[4]/CE                 2.237         
+FSM_onehot_PS_reg[6]/C         teni_reg[5]/CE                 2.237         
+FSM_onehot_PS_reg[6]/C         teni_reg[6]/CE                 2.237         
+FSM_onehot_PS_reg[6]/C         teni_reg[7]/CE                 2.237         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[6]/S                 2.280         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[7]/S                 2.280         
+FSM_onehot_PS_reg[1]/C         jr_reg[2]/R                    2.282         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[6]/CE                2.294         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[7]/CE                2.294         
+FSM_onehot_PS_reg[0]/C         teni_reg[16]/R                 2.314         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[0]/S                 2.334         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[5]/S                 2.334         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[1]/S                 2.339         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[2]/S                 2.339         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[3]/S                 2.339         
+FSM_onehot_PS_reg[0]/C         tsecp_reg[4]/S                 2.339         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[0]/CE                2.399         
+FSM_onehot_PS_reg[8]/C         tsecp_reg[5]/CE                2.399         
+FSM_onehot_PS_reg[12]/C        jr_reg[0]/CE                   2.414         
+FSM_onehot_PS_reg[12]/C        jr_reg[1]/CE                   2.414         
+FSM_onehot_PS_reg[12]/C        jr_reg[3]/CE                   2.414         
+FSM_onehot_PS_reg[12]/C        jr_reg[4]/CE                   2.414         
+FSM_onehot_PS_reg[12]/C        jr_reg[5]/CE                   2.414         
+FSM_onehot_PS_reg[6]/C         teni_reg[1]/CE                 2.426         
+FSM_onehot_PS_reg[6]/C         teni_reg[2]/CE                 2.426         
+FSM_onehot_PS_reg[6]/C         teni_reg[3]/CE                 2.426         
+FSM_onehot_PS_reg[6]/C         teni_reg[11]/CE                2.436         
+FSM_onehot_PS_reg[6]/C         teni_reg[12]/CE                2.436         
+FSM_onehot_PS_reg[6]/C         teni_reg[13]/CE                2.436         
+FSM_onehot_PS_reg[12]/C        jr_reg[2]/CE                   2.559         
+FSM_onehot_PS_reg[6]/C         teni_reg[10]/CE                2.566         
+FSM_onehot_PS_reg[6]/C         teni_reg[14]/CE                2.566         
+FSM_onehot_PS_reg[6]/C         teni_reg[15]/CE                2.566         
+FSM_onehot_PS_reg[6]/C         teni_reg[8]/CE                 2.566         
+FSM_onehot_PS_reg[6]/C         teni_reg[9]/CE                 2.566         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[5]/D                 2.819         
+FSM_onehot_PS_reg[6]/C         teni_reg[16]/CE                2.896         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[0]/D                 2.951         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[1]/D                 2.951         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[2]/D                 2.951         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[3]/D                 3.118         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[6]/D                 3.224         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[7]/D                 3.224         
+FSM_onehot_PS_reg[0]/C         teni_reg[0]/D                  3.345         
+FSM_onehot_PS_reg[9]/C         tsecp_reg[4]/D                 3.357         
+sevensegm/in_reg[1]/C          sevensegm/ssdis/c_reg[7]/D     5.098         
+sevensegm/in_reg[1]/C          sevensegm/ssdis/c_reg[5]/D     5.098         
+sevensegm/in_reg[1]/C          sevensegm/ssdis/c_reg[3]/D     5.109         
+sevensegm/in_reg[1]/C          sevensegm/ssdis/c_reg[6]/D     5.112         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[10]/R
+                                                              5.121         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[11]/R
+                                                              5.121         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[8]/R
+                                                              5.121         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[9]/R
+                                                              5.121         
+sevensegm/in_reg[1]/C          sevensegm/ssdis/c_reg[4]/D     5.125         
+sevensegm/in_reg[2]/C          sevensegm/ssdis/c_reg[1]/D     5.218         
+sevensegm/in_reg[2]/C          sevensegm/ssdis/c_reg[2]/D     5.236         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[12]/R
+                                                              5.287         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[13]/R
+                                                              5.287         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[0]/R
+                                                              5.290         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[1]/R
+                                                              5.290         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[2]/R
+                                                              5.290         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[3]/R
+                                                              5.290         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[4]/R
+                                                              5.412         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[5]/R
+                                                              5.412         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[6]/R
+                                                              5.412         
+uart64/transmit/bitTmr_reg[3]/C
+                               uart64/transmit/bitTmr_reg[7]/R
+                                                              5.412         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[10]/R    5.444         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[11]/R    5.444         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[8]/R     5.444         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[9]/R     5.444         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[12]/R    5.459         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[13]/R    5.459         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[14]/R    5.459         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[15]/R    5.459         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[16]/R    5.476         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[17]/R    5.476         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[4]/R     5.746         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[5]/R     5.746         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[6]/R     5.746         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[7]/R     5.746         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[0]/R     5.895         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[1]/R     5.895         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[2]/R     5.895         
+uart64/reset_cntr_reg[17]/C    uart64/reset_cntr_reg[3]/R     5.895         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/strIndex_reg[0]/R       6.105         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/strIndex_reg[1]/R       6.105         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/strIndex_reg[2]/R       6.105         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/strIndex_reg[3]/R       6.105         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[0]/CE
+                                                              6.180         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[1]/CE
+                                                              6.180         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[2]/CE
+                                                              6.180         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[3]/CE
+                                                              6.180         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[4]/R       6.249         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[5]/R       6.249         
+FSM_onehot_PS_reg[7]/C         sevensegm/ctworo/countforss/count_reg[4]/R
+                                                              6.284         
+FSM_onehot_PS_reg[7]/C         sevensegm/ctworo/countforss/count_reg[5]/R
+                                                              6.284         
+FSM_onehot_PS_reg[7]/C         sevensegm/ctworo/countforss/count_reg[6]/R
+                                                              6.284         
+FSM_onehot_PS_reg[7]/C         sevensegm/ctworo/countforss/count_reg[7]/R
+                                                              6.284         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[2][0]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][6]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][7]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[5][2]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[6][2]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[6][4]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[6][6]/CE    6.294         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[7][7]/CE    6.294         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[10]/CE
+                                                              6.322         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[11]/CE
+                                                              6.322         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[8]/CE
+                                                              6.322         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/count_reg[9]/CE
+                                                              6.322         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[0]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[1]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[2]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[3]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[4]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[5]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[6]/CE
+                                                              6.362         
+sevensegm/ctworo/countforss/count_reg[12]/C
+                               sevensegm/ctworo/countforss/rcounto_reg[12]/CE
+                                                              6.371         
+uart64/transmit/bitIndex_reg[0]/C
+                               uart64/transmit/FSM_sequential_txState_reg[0]/D
+                                                              6.391         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/txBit_reg/S    6.453         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[0]/R
+                                                              6.473         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[1]/R
+                                                              6.473         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[2]/R
+                                                              6.473         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[3]/R
+                                                              6.473         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[0]/R       6.484         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[2]/R       6.484         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[0][0]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[0][2]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[0][4]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[1][0]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[1][4]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[1][5]/CE    6.485         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[1][7]/CE    6.485         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[28]/R
+                                                              6.507         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[29]/R
+                                                              6.507         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[30]/R
+                                                              6.507         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[1][1]/CE    6.514         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][0]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][1]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][2]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[4][5]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[5][0]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[5][4]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[5][6]/CE    6.519         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[6][0]/CE    6.519         
+uart64/reset_cntr_reg[9]/C     uart64/FSM_sequential_uartState_reg[0]/D
+                                                              6.584         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[6]/R       6.632         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[7]/R       6.632         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[6]/CE      6.633         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[7]/CE      6.633         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[24]/R
+                                                              6.647         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[25]/R
+                                                              6.647         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[26]/R
+                                                              6.647         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[27]/R
+                                                              6.647         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[4]/R
+                                                              6.659         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[5]/R
+                                                              6.659         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[6]/R
+                                                              6.659         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[7]/R
+                                                              6.659         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[20]/R
+                                                              6.759         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[21]/R
+                                                              6.759         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[22]/R
+                                                              6.759         
+uart64/transmit/FSM_sequential_txState_reg[1]/C
+                               uart64/transmit/bitIndex_reg[23]/R
+                                                              6.759         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[2][1]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[3][1]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[3][2]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[3][4]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[3][5]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/sendStr_reg[7][0]/CE    6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[0]/CE      6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[2]/CE      6.772         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[4]/CE      6.793         
+uart64/FSM_sequential_uartState_reg[0]/C
+                               uart64/uartData_reg[5]/CE      6.793         
+
+
+

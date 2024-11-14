@@ -1,0 +1,192 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sun Nov 10 16:26:28 2024
+| Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_drc -file ./EnhancedCRO/post_impl_drc.rpt
+| Design       : enhancedCROwrap
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: enhancedCROwrap
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| FLBO-1      | Warning  | Pblock overlap                                              | 16         |
+| LUTLP-2     | Warning  | Combinatorial Loop Allowed                                  | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 3          |
+| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG                             | 2          |
+| PLCK-1      | Warning  | Clock Placer Checks                                         | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| RTSTAT-10   | Warning  | No routable loads                                           | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+FLBO-1#1 Warning
+Pblock overlap  - PBlock:pblockro0
+pblockro0 overlaps with pblockro1 : 12.50% .
+Related violations: <none>
+
+FLBO-1#2 Warning
+Pblock overlap  - PBlock:pblockro1
+pblockro1 overlaps with pblockro0, pblockro2 : 20.00% 20.00% .
+Related violations: <none>
+
+FLBO-1#3 Warning
+Pblock overlap  - PBlock:pblockro10
+pblockro10 overlaps with pblockro9, pblockro11 : 11.11% 11.11% .
+Related violations: <none>
+
+FLBO-1#4 Warning
+Pblock overlap  - PBlock:pblockro11
+pblockro11 overlaps with pblockro10 : 16.67% .
+Related violations: <none>
+
+FLBO-1#5 Warning
+Pblock overlap  - PBlock:pblockro12
+pblockro12 overlaps with pblockro13 : 12.50% .
+Related violations: <none>
+
+FLBO-1#6 Warning
+Pblock overlap  - PBlock:pblockro13
+pblockro13 overlaps with pblockro12, pblockro14 : 20.00% 20.00% .
+Related violations: <none>
+
+FLBO-1#7 Warning
+Pblock overlap  - PBlock:pblockro14
+pblockro14 overlaps with pblockro15, pblockro13 : 11.11% 11.11% .
+Related violations: <none>
+
+FLBO-1#8 Warning
+Pblock overlap  - PBlock:pblockro15
+pblockro15 overlaps with pblockro14 : 16.67% .
+Related violations: <none>
+
+FLBO-1#9 Warning
+Pblock overlap  - PBlock:pblockro2
+pblockro2 overlaps with pblockro3, pblockro1 : 11.11% 11.11% .
+Related violations: <none>
+
+FLBO-1#10 Warning
+Pblock overlap  - PBlock:pblockro3
+pblockro3 overlaps with pblockro2 : 16.67% .
+Related violations: <none>
+
+FLBO-1#11 Warning
+Pblock overlap  - PBlock:pblockro4
+pblockro4 overlaps with pblockro5 : 12.50% .
+Related violations: <none>
+
+FLBO-1#12 Warning
+Pblock overlap  - PBlock:pblockro5
+pblockro5 overlaps with pblockro6, pblockro4 : 20.00% 20.00% .
+Related violations: <none>
+
+FLBO-1#13 Warning
+Pblock overlap  - PBlock:pblockro6
+pblockro6 overlaps with pblockro7, pblockro5 : 11.11% 11.11% .
+Related violations: <none>
+
+FLBO-1#14 Warning
+Pblock overlap  - PBlock:pblockro7
+pblockro7 overlaps with pblockro6 : 16.67% .
+Related violations: <none>
+
+FLBO-1#15 Warning
+Pblock overlap  - PBlock:pblockro8
+pblockro8 overlaps with pblockro9 : 12.50% .
+Related violations: <none>
+
+FLBO-1#16 Warning
+Pblock overlap  - PBlock:pblockro9
+pblockro9 overlaps with pblockro8, pblockro10 : 20.00% 20.00% .
+Related violations: <none>
+
+LUTLP-2#1 Warning
+Combinatorial Loop Allowed  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: encro/nandd, encro/nandu.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net NS is a gated clock net sourced by a combinational pin FSM_onehot_NS_reg[14]_i_2/O, cell FSM_onehot_NS_reg[14]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net crores/sela_reg[3]_i_2_n_1 is a gated clock net sourced by a combinational pin crores/sela_reg[3]_i_2/O, cell crores/sela_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ncount1 is a gated clock net sourced by a combinational pin sevensegm_i_1/O, cell sevensegm_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLBUFGOPT-1#1 Warning
+Non-Optimal connections to BUFG  
+A non-muxed BUFG encro/lowbuf2 is driven by another global buffer encro/lowbuf1. Remove non-muxed BUFG if it is not desired
+Related violations: <none>
+
+PLBUFGOPT-1#2 Warning
+Non-Optimal connections to BUFG  
+A non-muxed BUFG encro/upbuf2 is driven by another global buffer encro/upbuf1. Remove non-muxed BUFG if it is not desired
+Related violations: <none>
+
+PLCK-1#1 Warning
+Clock Placer Checks  
+Sub-optimal placement for a BUFG-BUFG cascade pair. 
+Resolution: A dedicated routing path between the two BUFGs can be used if they are placed in cyclically adjacent BUFG sites and both are in the same half (TOP/BOTTOM) side of an SLR. If this condition cannot be met, it is recommended that a BUFH be connected in series between the two BUFGs to ensure that clock region partitioning will account for the use of a clock spine for this connection.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	encro/lowbuf1 (BUFG.O) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+	encro/lowmux (BUFGCTRL.I1) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
+	encro/lowbuf2 (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+
+Related violations: <none>
+
+PLCK-1#2 Warning
+Clock Placer Checks  
+Sub-optimal placement for a BUFG-BUFG cascade pair. 
+Resolution: A dedicated routing path between the two BUFGs can be used if they are placed in cyclically adjacent BUFG sites and both are in the same half (TOP/BOTTOM) side of an SLR. If this condition cannot be met, it is recommended that a BUFH be connected in series between the two BUFGs to ensure that clock region partitioning will account for the use of a clock spine for this connection.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	encro/upbuf1 (BUFG.O) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+	encro/upbuf2 (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y4
+	encro/upmux (BUFGCTRL.I1) is provisionally placed by clockplacer on BUFGCTRL_X0Y5
+
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT sevensegm_i_1 is driving clock pin of 64 cells. This could lead to large hold time violations. First few involved cells are:
+    sevensegm/ctworo/countforss/acountt_reg[22] {FDRE}
+    sevensegm/ctworo/countforss/acountt_reg[6] {FDRE}
+    sevensegm/ctworo/countforss/acountt_reg[21] {FDRE}
+    sevensegm/ctworo/countforss/acountt_reg[20] {FDRE}
+    sevensegm/ctworo/countforss/acountt_reg[16] {FDRE}
+
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+51 net(s) have no routable loads. The problem bus(es) and/or net(s) are sevensegm/ctworo/countforss/bcounto[31:0], sevensegm/ctworo/countforss/rcounto[18:0].
+Related violations: <none>
+
+
