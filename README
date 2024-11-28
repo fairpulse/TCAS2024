@@ -1,2 +1,1 @@
-Enhanced CROP PUF design with a single RO at the put and an RS Latching the PLL outputs.
-I have excluded the generated .bit file from the repo.
+Version 2 in which the PLL outputs go to DFFs(decimators) and their outputs go to counters. Yes, There are counters still, timing is always failing
