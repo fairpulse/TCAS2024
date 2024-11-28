@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Sun Nov 10 16:26:28 2024
+| Date         : Thu Nov 28 14:16:29 2024
 | Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_drc -file ./EnhancedCRO/post_impl_drc.rpt
 | Design       : enhancedCROwrap
@@ -29,11 +29,10 @@ Table of Contents
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | FLBO-1      | Warning  | Pblock overlap                                              | 16         |
-| LUTLP-2     | Warning  | Combinatorial Loop Allowed                                  | 1          |
 | PDRC-153    | Warning  | Gated clock check                                           | 3          |
 | PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG                             | 2          |
 | PLCK-1      | Warning  | Clock Placer Checks                                         | 2          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
 | RTSTAT-10   | Warning  | No routable loads                                           | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
@@ -51,7 +50,7 @@ Related violations: <none>
 
 FLBO-1#3 Warning
 Pblock overlap  - PBlock:pblockro10
-pblockro10 overlaps with pblockro9, pblockro11 : 11.11% 11.11% .
+pblockro10 overlaps with pblockro11, pblockro9 : 11.11% 11.11% .
 Related violations: <none>
 
 FLBO-1#4 Warning
@@ -71,7 +70,7 @@ Related violations: <none>
 
 FLBO-1#7 Warning
 Pblock overlap  - PBlock:pblockro14
-pblockro14 overlaps with pblockro15, pblockro13 : 11.11% 11.11% .
+pblockro14 overlaps with pblockro13, pblockro15 : 11.11% 11.11% .
 Related violations: <none>
 
 FLBO-1#8 Warning
@@ -96,12 +95,12 @@ Related violations: <none>
 
 FLBO-1#12 Warning
 Pblock overlap  - PBlock:pblockro5
-pblockro5 overlaps with pblockro6, pblockro4 : 20.00% 20.00% .
+pblockro5 overlaps with pblockro4, pblockro6 : 20.00% 20.00% .
 Related violations: <none>
 
 FLBO-1#13 Warning
 Pblock overlap  - PBlock:pblockro6
-pblockro6 overlaps with pblockro7, pblockro5 : 11.11% 11.11% .
+pblockro6 overlaps with pblockro5, pblockro7 : 11.11% 11.11% .
 Related violations: <none>
 
 FLBO-1#14 Warning
@@ -116,12 +115,7 @@ Related violations: <none>
 
 FLBO-1#16 Warning
 Pblock overlap  - PBlock:pblockro9
-pblockro9 overlaps with pblockro8, pblockro10 : 20.00% 20.00% .
-Related violations: <none>
-
-LUTLP-2#1 Warning
-Combinatorial Loop Allowed  
-2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: encro/nandd, encro/nandu.
+pblockro9 overlaps with pblockro10, pblockro8 : 20.00% 20.00% .
 Related violations: <none>
 
 PDRC-153#1 Warning
@@ -131,12 +125,12 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net crores/sela_reg[3]_i_2_n_1 is a gated clock net sourced by a combinational pin crores/sela_reg[3]_i_2/O, cell crores/sela_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ncount1 is a gated clock net sourced by a combinational pin sevensegm_i_1/O, cell sevensegm_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net ncount1 is a gated clock net sourced by a combinational pin sevensegm_i_1/O, cell sevensegm_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ncount2 is a gated clock net sourced by a combinational pin sevensegm_i_2/O, cell sevensegm_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLBUFGOPT-1#1 Warning
@@ -156,8 +150,8 @@ Resolution: A dedicated routing path between the two BUFGs can be used if they a
  This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
 	encro/lowbuf1 (BUFG.O) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
-	encro/lowmux (BUFGCTRL.I1) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
 	encro/lowbuf2 (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+	encro/lowmux (BUFGCTRL.I1) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
 
 Related violations: <none>
 
@@ -176,17 +170,28 @@ Related violations: <none>
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT sevensegm_i_1 is driving clock pin of 64 cells. This could lead to large hold time violations. First few involved cells are:
-    sevensegm/ctworo/countforss/acountt_reg[22] {FDRE}
-    sevensegm/ctworo/countforss/acountt_reg[6] {FDRE}
-    sevensegm/ctworo/countforss/acountt_reg[21] {FDRE}
-    sevensegm/ctworo/countforss/acountt_reg[20] {FDRE}
-    sevensegm/ctworo/countforss/acountt_reg[16] {FDRE}
+    sevensegm/ctworo/countforss/acounto_reg[5] {FDRE}
+    sevensegm/ctworo/countforss/acounto_reg[15] {FDRE}
+    sevensegm/ctworo/countforss/acounto_reg[3] {FDRE}
+    sevensegm/ctworo/countforss/acounto_reg[0] {FDRE}
+    sevensegm/ctworo/countforss/acounto_reg[1] {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT sevensegm_i_2 is driving clock pin of 64 cells. This could lead to large hold time violations. First few involved cells are:
+    sevensegm/ctworo/countforss/bcounto_reg[0] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[2] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[15] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[12] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[10] {FDRE}
 
 Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-51 net(s) have no routable loads. The problem bus(es) and/or net(s) are sevensegm/ctworo/countforss/bcounto[31:0], sevensegm/ctworo/countforss/rcounto[18:0].
+19 net(s) have no routable loads. The problem bus(es) and/or net(s) are sevensegm/ctworo/countforss/rcounto[18:0].
 Related violations: <none>
 
 

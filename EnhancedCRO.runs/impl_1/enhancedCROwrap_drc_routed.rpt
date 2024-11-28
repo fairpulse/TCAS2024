@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Wed Oct 30 06:57:05 2024
+| Date         : Thu Nov 28 11:09:24 2024
 | Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_drc -file enhancedCROwrap_drc_routed.rpt -pb enhancedCROwrap_drc_routed.pb -rpx enhancedCROwrap_drc_routed.rpx
 | Design       : enhancedCROwrap
@@ -25,23 +25,18 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 8
-+-------------+----------+---------------------------------+------------+
-| Rule        | Severity | Description                     | Violations |
-+-------------+----------+---------------------------------+------------+
-| LUTLP-2     | Warning  | Combinatorial Loop Allowed      | 1          |
-| PDRC-153    | Warning  | Gated clock check               | 2          |
-| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG | 2          |
-| PLCK-1      | Warning  | Clock Placer Checks             | 2          |
-| RTSTAT-10   | Warning  | No routable loads               | 1          |
-+-------------+----------+---------------------------------+------------+
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
+| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG                             | 2          |
+| PLCK-1      | Warning  | Clock Placer Checks                                         | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| RTSTAT-10   | Warning  | No routable loads                                           | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-LUTLP-2#1 Warning
-Combinatorial Loop Allowed  
-2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: encro/nandd, encro/nandu.
-Related violations: <none>
-
 PDRC-153#1 Warning
 Gated clock check  
 Net NS is a gated clock net sourced by a combinational pin FSM_onehot_NS_reg[14]_i_2/O, cell FSM_onehot_NS_reg[14]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
@@ -49,7 +44,7 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net crores/sela_reg[3]_i_2_n_1 is a gated clock net sourced by a combinational pin crores/sela_reg[3]_i_2/O, cell crores/sela_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ncount2 is a gated clock net sourced by a combinational pin sevensegm_i_2/O, cell sevensegm_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLBUFGOPT-1#1 Warning
@@ -86,9 +81,20 @@ Resolution: A dedicated routing path between the two BUFGs can be used if they a
 
 Related violations: <none>
 
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT sevensegm_i_2 is driving clock pin of 64 cells. This could lead to large hold time violations. First few involved cells are:
+    sevensegm/ctworo/countforss/bcounto_reg[0] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[10] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[11] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[12] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[13] {FDRE}
+
+Related violations: <none>
+
 RTSTAT-10#1 Warning
 No routable loads  
-51 net(s) have no routable loads. The problem bus(es) and/or net(s) are sevensegm/ctworo/countforss/bcounto[31:0], sevensegm/ctworo/countforss/rcounto[18:0].
+19 net(s) have no routable loads. The problem bus(es) and/or net(s) are sevensegm/ctworo/countforss/rcounto[18:0].
 Related violations: <none>
 
 

@@ -60,6 +60,8 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -74,6 +76,7 @@ set rc [catch {
   set_property ip_output_repo /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.runs/synth_1/enhancedCROwrap.dcp
+  read_xdc /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/new/TimingTop.xdc
   read_xdc /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc
   link_design -top enhancedCROwrap -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

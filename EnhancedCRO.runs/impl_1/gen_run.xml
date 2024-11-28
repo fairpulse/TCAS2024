@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730251460">
-  <File Type="PA-TCL" Name="enhancedCROwrap.tcl"/>
-  <File Type="PLACE-DCP" Name="enhancedCROwrap_placed.dcp"/>
-  <File Type="REPORTS-TCL" Name="enhancedCROwrap_reports.tcl"/>
-  <File Type="PWROPT-DCP" Name="enhancedCROwrap_pwropt.dcp"/>
-  <File Type="OPT-DCP" Name="enhancedCROwrap_opt.dcp"/>
-  <File Type="OPT-DRC" Name="enhancedCROwrap_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="enhancedCROwrap.hwdef"/>
-  <File Type="RDI-RDI" Name="enhancedCROwrap.vdi"/>
-  <File Type="PLACE-IO" Name="enhancedCROwrap_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="enhancedCROwrap_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="enhancedCROwrap_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="enhancedCROwrap_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="enhancedCROwrap_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="enhancedCROwrap_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="enhancedCROwrap_physopt.dcp"/>
-  <File Type="BG-BIT" Name="enhancedCROwrap.bit"/>
-  <File Type="ROUTE-STATUS-PB" Name="enhancedCROwrap_route_status.pb"/>
-  <File Type="BG-BIN" Name="enhancedCROwrap.bin"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="enhancedCROwrap_timing_summary_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="enhancedCROwrap.msk"/>
-  <File Type="ROUTE-TIMING-PB" Name="enhancedCROwrap_timing_summary_routed.pb"/>
-  <File Type="BITSTR-RBT" Name="enhancedCROwrap.rbt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="enhancedCROwrap_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-NKY" Name="enhancedCROwrap.nky"/>
-  <File Type="BITSTR-BMM" Name="enhancedCROwrap_bd.bmm"/>
-  <File Type="ROUTE-CLK" Name="enhancedCROwrap_clock_utilization_routed.rpt"/>
-  <File Type="BG-DRC" Name="enhancedCROwrap.drc"/>
-  <File Type="ROUTE-ERROR-DCP" Name="enhancedCROwrap_routed_error.dcp"/>
-  <File Type="BITSTR-MMI" Name="enhancedCROwrap.mmi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1732772195">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="enhancedCROwrap_postroute_physopt_bb.dcp"/>
+  <File Type="BG-DRC" Name="enhancedCROwrap.drc"/>
   <File Type="BG-BGN" Name="enhancedCROwrap.bgn"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="enhancedCROwrap_routed_bb.dcp"/>
   <File Type="BITSTR-SYSDEF" Name="enhancedCROwrap.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="enhancedCROwrap.ltx"/>
+  <File Type="BITSTR-MMI" Name="enhancedCROwrap.mmi"/>
+  <File Type="BITSTR-BMM" Name="enhancedCROwrap_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="enhancedCROwrap.nky"/>
+  <File Type="BITSTR-RBT" Name="enhancedCROwrap.rbt"/>
+  <File Type="BITSTR-MSK" Name="enhancedCROwrap.msk"/>
+  <File Type="BG-BIN" Name="enhancedCROwrap.bin"/>
+  <File Type="BG-BIT" Name="enhancedCROwrap.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="enhancedCROwrap_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="enhancedCROwrap_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="enhancedCROwrap_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="enhancedCROwrap_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="enhancedCROwrap_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="enhancedCROwrap_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="enhancedCROwrap_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="enhancedCROwrap_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="enhancedCROwrap_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="enhancedCROwrap_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="enhancedCROwrap_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="enhancedCROwrap_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="enhancedCROwrap_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="enhancedCROwrap_power_summary_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="enhancedCROwrap_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-PWR" Name="enhancedCROwrap_power_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="enhancedCROwrap_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="enhancedCROwrap_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-PB" Name="enhancedCROwrap_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="enhancedCROwrap_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="enhancedCROwrap_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="enhancedCROwrap_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="enhancedCROwrap_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="enhancedCROwrap_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="enhancedCROwrap_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="enhancedCROwrap_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="enhancedCROwrap_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="enhancedCROwrap_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="enhancedCROwrap_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="enhancedCROwrap_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="enhancedCROwrap_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="enhancedCROwrap_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="enhancedCROwrap_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="enhancedCROwrap_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="enhancedCROwrap_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="enhancedCROwrap_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="enhancedCROwrap_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="enhancedCROwrap_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="enhancedCROwrap_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="enhancedCROwrap_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="enhancedCROwrap.vdi"/>
+  <File Type="PWROPT-TIMING" Name="enhancedCROwrap_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="enhancedCROwrap_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="enhancedCROwrap_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="enhancedCROwrap.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="enhancedCROwrap_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="enhancedCROwrap_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="enhancedCROwrap_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="enhancedCROwrap_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="enhancedCROwrap_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="enhancedCROwrap_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="enhancedCROwrap_placed.dcp"/>
+  <File Type="PA-TCL" Name="enhancedCROwrap.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v">
@@ -153,13 +169,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/ComparetwoRODRC.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="enhancedCROwrap"/>
@@ -167,6 +176,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/TimingTop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/constrs_1/imports/Sources/Comparehmxdc.xdc">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../FirstCROPUF/Sources/Comparehmxdc.xdc"/>
@@ -176,6 +191,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/TimingTop.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

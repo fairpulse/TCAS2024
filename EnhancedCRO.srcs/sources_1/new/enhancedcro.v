@@ -13,21 +13,25 @@
 // 
 // Dependencies: 
 // 
-// Revision:
-// Revision 0.01 - File Created
+// Revision: 20.11.2024
+// Revision 0.02 - File Created
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
 
 module enhancedcro(
-    input croin,
+    input croin1,
+    input croin2,
+    input clken, //for both the FDCE flipflops
+    input clr, // for both the FDCE flipflops
     input [1:0] sel,
     input clk,
     input pllrst,
     output qro,
     output qnro,
     output plldone
+    //output decbit
     );
 
 
@@ -38,12 +42,13 @@ wire Q,Qn;
 
 assign qro=Q;
 assign qnro=Qn;
+
 assign plldone=(upplldone & lowplldone);
  
-(*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG upbuf1 (.O(b),.I(croin));
+(*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG upbuf1 (.O(b),.I(croin1));
 (*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG upbuf2 (.O(c),.I(b));
 
-(*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG lowbuf1 (.O(d),.I(croin));
+(*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG lowbuf1 (.O(d),.I(croin2));
 (*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFG lowbuf2 (.O(e),.I(d));
     
 (*DONT_TOUCH = "TRUE"*) BUFGMUX #() upmux (.O(f),.I0(c), .I1(b), .S(sel[1]));
@@ -159,7 +164,31 @@ MUXF7 lowmux (
 (*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) nandd (.O(Q),.I0(Qn),.I1(g));
 */
 
-(*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) nandu (.O(Qn),.I0(~h),.I1(Q));
-(*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) nandd (.O(Q),.I0(Qn),.I1(i));
+//NAND based SR Latch //Last commented out on: 20.11.2024 
+//(*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) nandu (.O(Qn),.I0(~h),.I1(Q));
+//(*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) nandd (.O(Q),.I0(Qn),.I1(i));
 
+//Two D-Flipflops
+FDCE #(
+.INIT(1'b0)
+) updff (
+.Q(Q),
+.C(clk),
+.CE(clken),
+.CLR(clr),
+.D(h)
+);
+
+FDCE #(
+.INIT(1'b0)
+) lowdff (
+.Q(Qn),
+.C(clk),
+.CE(clken),
+.CLR(clr),
+.D(i)
+);
+
+//assign decbit = Q ^ Qn; //XOR
+//(*DONT_TOUCH = "TRUE"*) LUT2 #(.INIT(4'h7)) exor (.O(decbit),.I0(Qn),.I1(Q));
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Wed Oct 30 06:56:37 2024
+| Date         : Thu Nov 28 11:08:54 2024
 | Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_control_sets -verbose -file enhancedCROwrap_control_sets_placed.rpt
 | Design       : enhancedCROwrap
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    24 |
-| Unused register locations in slices containing registers |    53 |
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    62 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,7 +35,8 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            2 |
-|      4 |            2 |
+|      2 |            1 |
+|      4 |            3 |
 |      6 |            1 |
 |      8 |            3 |
 |      9 |            1 |
@@ -51,45 +52,47 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             115 |           38 |
+| No           | No                    | No                     |             128 |           55 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              48 |           13 |
-| Yes          | No                    | No                     |             155 |           29 |
-| Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             157 |           44 |
+| No           | Yes                   | No                     |              48 |           17 |
+| Yes          | No                    | No                     |             163 |           39 |
+| Yes          | No                    | Yes                    |               2 |            1 |
+| Yes          | Yes                   | No                     |             157 |           46 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
-|               Clock Signal               |                  Enable Signal                  |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+------------------------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
-|  FSM_onehot_PS_reg_n_1_[3]               |                                                 | croclr                             |                1 |              1 |
-| ~clk_IBUF_BUFG                           |                                                 |                                    |                1 |              1 |
-|  crores/sela_reg[3]_i_2_n_1              |                                                 |                                    |                1 |              4 |
-|  uartclk                                 | uart64/strIndex                                 | uart64/sendStr                     |                1 |              4 |
-|  uartclk                                 | uart64/strIndex                                 | uart64/uartData[7]_i_1_n_1         |                3 |              6 |
-|  uartclk                                 | uart64/uartSend                                 |                                    |                2 |              8 |
-| ~clk_IBUF_BUFG                           | jr02_out                                        | jr0                                |                3 |              8 |
-| ~clk_IBUF_BUFG                           | tsecp[7]_i_1_n_1                                | croclr                             |                2 |              8 |
-|  uartclk                                 |                                                 |                                    |                4 |              9 |
-|  uartclk                                 |                                                 | uart64/transmit/bitTmr             |                4 |             14 |
-|  NS                                      |                                                 |                                    |                5 |             14 |
-|  clk_IBUF_BUFG                           |                                                 | rst_IBUF                           |                3 |             15 |
-| ~clk_IBUF_BUFG                           | teni[16]_i_2_n_1                                | teni[16]_i_1_n_1                   |                5 |             16 |
-|  uartclk                                 |                                                 | uart64/reset_cntr[0]_i_1_n_1       |                5 |             18 |
-|  clk_IBUF_BUFG                           | sevensegm/ctworo/countforss/sel                 | couclr                             |                5 |             19 |
-|  clk_IBUF_BUFG                           | sevensegm/ctworo/countforss/cdone               |                                    |                3 |             19 |
-|  clk_IBUF_BUFG                           |                                                 |                                    |                8 |             31 |
-| ~                                        | sevensegm/ctworo/countforss/acounto[31]_i_1_n_1 |                                    |                9 |             32 |
-|  uartclk                                 | uart64/transmit/txBit_i_1_n_1                   | uart64/transmit/bitIndex_reg[30]_0 |                9 |             32 |
-| ~ncount1_BUFG                            | sevensegm/ctworo/countforss/sel                 | couclr                             |                8 |             32 |
-| ~ncount1_BUFG                            | sevensegm/ctworo/countforss/acounto[31]_i_1_n_1 |                                    |                5 |             32 |
-|  sevensegm/ctworo/countforss/n_0_11_BUFG | sevensegm/ctworo/countforss/sel                 | couclr                             |                8 |             32 |
-|  p_2_in                                  |                                                 |                                    |               19 |             56 |
-|  uartclk                                 | uart64/sendStr                                  |                                    |               10 |             64 |
-+------------------------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
++----------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
+|        Clock Signal        |                  Enable Signal                  |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
+| ~clk_IBUF_BUFG             |                                                 |                                    |                1 |              1 |
+|  FSM_onehot_PS_reg_n_0_[3] |                                                 | croclr                             |                1 |              1 |
+|  dffclk                    | dffclken                                        | croclr                             |                1 |              2 |
+|  clk_IBUF_BUFG             | crores/sela[3]_i_1_n_0                          |                                    |                4 |              4 |
+|  clk_IBUF_BUFG             | crores/selb[3]_i_1_n_0                          |                                    |                3 |              4 |
+|  uartclk                   | uart64/strIndex                                 | uart64/sendStr                     |                2 |              4 |
+|  uartclk                   | uart64/strIndex                                 | uart64/uartData[7]_i_1_n_0         |                4 |              6 |
+|  uartclk                   | uart64/uartSend                                 |                                    |                1 |              8 |
+| ~clk_IBUF_BUFG             | jr02_out                                        | jr0                                |                2 |              8 |
+| ~clk_IBUF_BUFG             | tsecp[7]_i_1_n_0                                | croclr                             |                4 |              8 |
+|  uartclk                   |                                                 |                                    |                6 |              9 |
+|  uartclk                   |                                                 | uart64/transmit/bitTmr             |                4 |             14 |
+|  NS                        |                                                 |                                    |                6 |             14 |
+|  clk_IBUF_BUFG             |                                                 | rst_IBUF                           |                7 |             15 |
+| ~clk_IBUF_BUFG             | teni[16]_i_2_n_0                                | teni[16]_i_1_n_0                   |                4 |             16 |
+|  uartclk                   |                                                 | uart64/reset_cntr[0]_i_1_n_0       |                5 |             18 |
+|  clk_IBUF_BUFG             | sevensegm/ctworo/countforss/sel                 | couclr                             |                5 |             19 |
+|  clk_IBUF_BUFG             | sevensegm/ctworo/countforss/cdone               |                                    |                4 |             19 |
+| ~ncount2                   | sevensegm/ctworo/countforss/acounto[31]_i_1_n_0 |                                    |                9 |             32 |
+| ~ncount2                   | sevensegm/ctworo/countforss/sel                 | couclr                             |                8 |             32 |
+| ~ncount1_BUFG              | sevensegm/ctworo/countforss/sel                 | couclr                             |                8 |             32 |
+| ~ncount1_BUFG              | sevensegm/ctworo/countforss/acounto[31]_i_1_n_0 |                                    |                7 |             32 |
+|  uartclk                   | uart64/transmit/txBit_i_1_n_0                   | uart64/transmit/bitIndex_reg[30]_0 |                9 |             32 |
+|  clk_IBUF_BUFG             |                                                 |                                    |               20 |             48 |
+|  p_2_in                    |                                                 |                                    |               22 |             56 |
+|  uartclk                   | uart64/sendStr                                  |                                    |               11 |             64 |
++----------------------------+-------------------------------------------------+------------------------------------+------------------+----------------+
 
 

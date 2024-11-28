@@ -229,7 +229,8 @@ assign CLKFBIN=CLKFBOUT;
 //                                                               );
 
 PLLE2_BASE #(
-.BANDWIDTH("OPTIMIZED"), // "HIGH", "LOW" or "OPTIMIZED"
+//.BANDWIDTH("OPTIMIZED"),
+.BANDWIDTH("LOW"), // "HIGH", "LOW" or "OPTIMIZED"
 .CLKFBOUT_MULT(10), // Multiply value for all CLKOUT clock outputs (1-64)
 .CLKFBOUT_PHASE(0.0), // Phase offset in degrees of the clock feedback output (0.0-360.0).
 .CLKIN1_PERIOD(PERIOD), // Input clock period in ns to ps resolution (i.e. 33.333 is 30

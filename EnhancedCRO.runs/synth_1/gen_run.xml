@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730251460">
-  <File Type="PA-TCL" Name="enhancedCROwrap.tcl"/>
-  <File Type="REPORTS-TCL" Name="enhancedCROwrap_reports.tcl"/>
-  <File Type="RDS-RDS" Name="enhancedCROwrap.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1732772195">
+  <File Type="VDS-TIMING-PB" Name="enhancedCROwrap_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="enhancedCROwrap_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="enhancedCROwrap.dcp"/>
   <File Type="RDS-UTIL-PB" Name="enhancedCROwrap_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="enhancedCROwrap_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="enhancedCROwrap_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="enhancedCROwrap.vds"/>
+  <File Type="REPORTS-TCL" Name="enhancedCROwrap_reports.tcl"/>
+  <File Type="PA-TCL" Name="enhancedCROwrap.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ComparetwoRO.v">
@@ -112,13 +115,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/ComparetwoRODRC.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="enhancedCROwrap"/>
@@ -126,6 +122,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/TimingTop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/constrs_1/imports/Sources/Comparehmxdc.xdc">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../FirstCROPUF/Sources/Comparehmxdc.xdc"/>
@@ -135,6 +137,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/TimingTop.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

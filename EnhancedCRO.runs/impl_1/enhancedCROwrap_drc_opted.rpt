@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Wed Oct 30 06:56:30 2024
+| Date         : Thu Nov 28 11:08:46 2024
 | Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_drc -file enhancedCROwrap_drc_opted.rpt -pb enhancedCROwrap_drc_opted.pb -rpx enhancedCROwrap_drc_opted.rpx
 | Design       : enhancedCROwrap
@@ -25,20 +25,15 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 3
-+-------------+----------+---------------------------------+------------+
-| Rule        | Severity | Description                     | Violations |
-+-------------+----------+---------------------------------+------------+
-| LUTLP-2     | Warning  | Combinatorial Loop Allowed      | 1          |
-| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG | 2          |
-+-------------+----------+---------------------------------+------------+
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG                             | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-LUTLP-2#1 Warning
-Combinatorial Loop Allowed  
-2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: encro/nandd, encro/nandu.
-Related violations: <none>
-
 PLBUFGOPT-1#1 Warning
 Non-Optimal connections to BUFG  
 A non-muxed BUFG encro/lowbuf2 is driven by another global buffer encro/lowbuf1. Remove non-muxed BUFG if it is not desired
@@ -47,6 +42,17 @@ Related violations: <none>
 PLBUFGOPT-1#2 Warning
 Non-Optimal connections to BUFG  
 A non-muxed BUFG encro/upbuf2 is driven by another global buffer encro/upbuf1. Remove non-muxed BUFG if it is not desired
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT sevensegm_i_2 is driving clock pin of 64 cells. This could lead to large hold time violations. First few involved cells are:
+    sevensegm/ctworo/countforss/bcounto_reg[0] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[10] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[11] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[12] {FDRE}
+    sevensegm/ctworo/countforss/bcounto_reg[13] {FDRE}
+
 Related violations: <none>
 
 

@@ -51,7 +51,9 @@ wire  tca,tcb;
 
 //always @(posedge clk) cdone= &rcount[18:0];
 //assign fdif [18:0] = rcount [18:0];
-assign fdif = acount;
+//assign fdif = acount;
+ 
+assign fdif = acount ^ bcount;
 
 //assign cdone= (clr==1'b1) ? 1'b0 : (((&acount[11:0]==1'b1) || (&bcount[11:0]==1'b1)) ? 1'b1 : 1'b0);
 //assign fa=acount/rcount;

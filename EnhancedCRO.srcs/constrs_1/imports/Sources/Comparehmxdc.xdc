@@ -1,5 +1,3 @@
-create_clock -period 10.000 -name extclk -waveform {0.000 5.000} -add [get_ports clk]
-create_generated_clock -name uartclk -source [get_ports clk] -divide_by 1 [get_nets uartclk];
 
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
@@ -40,8 +38,8 @@ set_property PACKAGE_PIN H15 [get_ports {seg[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
 
 #For "done" output wire
-set_property IOSTANDARD LVCMOS33 [get_ports {done}]
-set_property PACKAGE_PIN U17 [get_ports {done}]
+set_property IOSTANDARD LVCMOS33 [get_ports done]
+set_property PACKAGE_PIN U17 [get_ports done]
 
 set_property PACKAGE_PIN D4 [get_ports txd]
 set_property IOSTANDARD LVCMOS33 [get_ports txd]
@@ -49,8 +47,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports txd]
 set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 
-set_property IOSTANDARD LVCMOS33 [get_ports {rst}]
-set_property PACKAGE_PIN H17 [get_ports {rst}]
+set_property IOSTANDARD LVCMOS33 [get_ports rst]
+set_property PACKAGE_PIN H17 [get_ports rst]
 
 ###### Four new input ports to selct the "CRO" among 16 CROs
 set_property IOSTANDARD LVCMOS33 [get_ports {selcro[3]}]
@@ -129,8 +127,11 @@ set_property PACKAGE_PIN H6 [get_ports {selcro[0]}]
 
 #set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {ro0/tem[0]}]
 
-set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {encro/qnro}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {encro/b}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {encro/c}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {encro/d}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {encro/e}]
+#set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets encro/qnro]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets encro/b]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets encro/c]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets encro/d]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets encro/e]
+
+#create_clock -period 10.000 -name extclk -waveform {0.000 5.000} -add [get_ports clk]
+#create_generated_clock -name uartclk -source [get_ports clk] -divide_by 1 [get_nets uartclk]

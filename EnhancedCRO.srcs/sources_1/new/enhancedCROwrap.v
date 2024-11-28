@@ -30,7 +30,10 @@ output txd,
 output done
     );
     
-    wire rout0,qro;
+    wire routa, routb, qro;
+    wire upqro,lowqro;
+    wire dffclken;
+    
     wire [16:0] eni;
     //reg [16:0] eni=17'd0;
     wire [4:0] cpdl;
@@ -50,6 +53,8 @@ output done
     reg [31:0] fdifreg=32'hFFFF_FFFF;
     (*KEEP = "TRUE"*) wire uartclk;
     (*KEEP = "TRUE"*) wire uartclken;
+    (*KEEP = "TRUE"*) wire dffclk;
+    //(*KEEP = "TRUE"*) wire dffclken;
     (*KEEP = "TRUE"*) wire uartdone;
     wire uartRdy;
     (*KEEP = "TRUE"*) reg [63:0] rddata=64'd0;
@@ -71,17 +76,16 @@ output done
     assign done=(PS==S7) ? 1'b1 : 1'b0;
     //assign done=cdone;
     
-    //assign ncount1 = ((PS==S4) || (PS==S5)) ? qro : 1'b0;
-    assign ncount1 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? qro : 1'b0;
     
-    //assign ncount1 = ((PS==S4) || (PS==S5)) ? 1'b0 : 1'b0;
+   // assign ncount1 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? qro : 1'b0;
+   //  assign ncount2 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? rout0 : 1'b0;
+       assign ncount1 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? upqro : 1'b0;
+       assign ncount2 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? lowqro : 1'b0;
     
-    //assign ncount2 = ((PS==S4) || (PS==S5)) ? rout0 : 1'b0;
-    assign ncount2 = ((PS==S4) || (PS==S11) || (PS==S12) || (PS==S13) || (PS==S14) || (PS==S5)) ? rout0 : 1'b0;
-    //assign ncount2 = ((PS==S4) || (PS==S5)) ? 1'b0 : 1'b0;
-    
+    assign dffclken=((PS==S4) || (PS==S11)  || (PS==S12) || (PS==S13) || (PS==S14)) ? 1'b1 : 1'b0;
     
     assign uartclken = 1'b1;
+   
     //assign rddata={eni,fdifreg,16'h0A0A};
     
     assign secp=tsecp;
@@ -102,15 +106,25 @@ output done
     .CE(uartclken),
     .I(clk)
     );
+    
+    (*KEEP_HIERARCHY = "TRUE", DONT_TOUCH = "TRUE"*) BUFGCE dffbuf (
+    .O(dffclk),
+    .CE(dffclken),
+    .I(clk)
+    );
      
     //(*DONT_TOUCH = "TRUE"*) rohmDRC ro0 (.rout(rout0), .en(eni), .cpdl(3'b011));
     //(*DONT_TOUCH = "TRUE"*) CompareHMwrapDRC comparecros (.clk(clk),.txd(txd),.done(),.ncount1(rout0),.selcro(selcro));
     
-    (*DONT_TOUCH = "TRUE"*) cro crores (.croout(rout0), .eni(eni), .cpdl(cpdl), .clr(croclr), .clk(clk));
+    //(*DONT_TOUCH = "TRUE"*) cro crores (.croout(rout0), .eni(eni), .cpdl(cpdl), .clr(croclr), .clk(clk));
+    (*DONT_TOUCH = "TRUE"*) cro crores (.croout1(routa), .croout2(routb), .eni(eni), .cpdl(cpdl), .clr(croclr), .clk(clk));
     
-    (*DONT_TOUCH = "TRUE"*) enhancedcro encro (.plldone(plldone), .qro(), .qnro(qro),.pllrst(pllrst), .croin(rout0), .sel(sel), .clk(clk));
+    (*DONT_TOUCH = "TRUE"*) enhancedcro encro (.plldone(plldone), .qro(upqro), .qnro(lowqro),.pllrst(pllrst), .clken(dffclken), .clr(croclr), .croin1(routa), .croin2(routb), .sel(sel), .clk(dffclk));
+    //(*DONT_TOUCH = "TRUE"*) enhancedcro encro (.plldone(plldone), .decbit(), .pllrst(pllrst), .clken(), .clr(), .croin1(routa), .croin2(routb), .sel(sel), .clk(clk));
+     
+    //(*DONT_TOUCH = "TRUE"*) ssdtop sevensegm (.fdif(fdif), .cdone(cdone), .cen(cen), .seg(seg), .clk(clk),.clr(couclr), .cpdl(cpdl), .count1(ncount1), .count2(1'b0));
+    (*DONT_TOUCH = "TRUE"*) ssdtop sevensegm (.fdif(fdif), .cdone(cdone), .cen(cen), .seg(seg), .clk(clk),.clr(couclr), .cpdl(cpdl), .count1(ncount1), .count2(ncount2));
     
-    (*DONT_TOUCH = "TRUE"*) ssdtop sevensegm (.fdif(fdif), .cdone(cdone), .cen(cen), .seg(seg), .clk(clk),.clr(couclr), .cpdl(cpdl), .count1(ncount1), .count2(1'b0));
     
   //  (*DONT_TOUCH="TRUE"*) Counter ctworotwo (.cdone(cdone), .rcounto(), .acounto(fdif), .bcounto(), .clk(clk),.clr(couclr), .cpdl(cpdl), .count1(ncount1), .count2(1'b0));
     
@@ -126,9 +140,9 @@ output done
     PS<=NS;
     end
     
-    always @(PS,jr,cdone,plldone,uartRdy,uartdone) begin
+    //always @(PS,jr,cdone,plldone,uartRdy,uartdone) begin
     //always @(PS,jr,cdone,plldone,uartRdy,uartdone,secpdone,alldone) begin
-    //always @(*) begin
+    always @(*) begin
     case (PS)
     S10: begin
     NS=S0;

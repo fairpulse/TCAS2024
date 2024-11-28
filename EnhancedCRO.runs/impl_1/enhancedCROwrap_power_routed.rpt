@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date             : Wed Oct 30 06:57:08 2024
+| Date             : Thu Nov 28 11:09:28 2024
 | Host             : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
 | Command          : report_power -file enhancedCROwrap_power_routed.rpt -pb enhancedCROwrap_power_summary_routed.pb -rpx enhancedCROwrap_power_routed.rpx
 | Design           : enhancedCROwrap
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.226        |
+| Total On-Chip Power (W)  | 0.326        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.129        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.228        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 83.5         |
+| Junction Temperature (C) | 26.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |      999 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      330 |     63400 |            0.52 |
-|   BUFG         |    <0.001 |       10 |        32 |           31.25 |
+| Clocks         |     0.005 |       16 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1121 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      424 |     63400 |            0.67 |
 |   CARRY4       |    <0.001 |       43 |     15850 |            0.27 |
-|   F7/F8 Muxes  |    <0.001 |       96 |     63400 |            0.15 |
-|   Register     |    <0.001 |      475 |    126800 |            0.37 |
-|   Others       |     0.000 |       25 |       --- |             --- |
-| Signals        |    <0.001 |      675 |       --- |             --- |
-| PLL            |     0.121 |        2 |         6 |           33.33 |
+|   F7/F8 Muxes  |    <0.001 |       95 |     63400 |            0.15 |
+|   Register     |    <0.001 |      498 |    126800 |            0.39 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |       26 |       --- |             --- |
+| Signals        |    <0.001 |      804 |       --- |             --- |
+| PLL            |     0.218 |        2 |         6 |           33.33 |
 | I/O            |     0.004 |       20 |       210 |            9.52 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.226 |          |           |                 |
+| Static Power   |     0.098 |          |           |                 |
+| Total          |     0.326 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.024 |       0.009 |      0.015 |
-| Vccaux    |       1.800 |     0.083 |       0.065 |      0.018 |
+| Vccint    |       1.000 |     0.044 |       0.028 |      0.016 |
+| Vccaux    |       1.800 |     0.128 |       0.109 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -127,12 +127,21 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+---------+---------+-----------------+
-| Clock   | Domain  | Constraint (ns) |
-+---------+---------+-----------------+
-| extclk  | clk     |            10.0 |
-| uartclk | uartclk |            10.0 |
-+---------+---------+-----------------+
++------------+--------------------------+-----------------+
+| Clock      | Domain                   | Constraint (ns) |
++------------+--------------------------+-----------------+
+| CLKFBOUT   | encro/lowpll/CLKFBOUT    |            10.0 |
+| CLKFBOUT_1 | encro/uppll/CLKFBOUT     |            10.0 |
+| cclk       | encro/c                  |            10.0 |
+| dffclk     | dffclk                   |            10.0 |
+| eclk       | encro/e                  |            10.0 |
+| extclk     | clk                      |            10.0 |
+| h          | encro/uppll/clkout       |            10.0 |
+| h          | encro/uppll/clkout_BUFG  |            10.0 |
+| i          | encro/lowpll/clkout      |            10.0 |
+| i          | encro/lowpll/clkout_BUFG |            10.0 |
+| uartclk    | uartclk                  |            10.0 |
++------------+--------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -144,7 +153,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| enhancedCROwrap  |     0.129 |
+| enhancedCROwrap  |     0.228 |
 |   crores         |    <0.001 |
 |     ro0          |    <0.001 |
 |       and1       |    <0.001 |
@@ -338,14 +347,14 @@ Table of Contents
 |       not23      |    <0.001 |
 |       not24      |    <0.001 |
 |       not25      |    <0.001 |
-|   encro          |     0.121 |
-|     lowpll       |     0.061 |
-|     uppll        |     0.061 |
+|   encro          |     0.221 |
+|     lowpll       |     0.110 |
+|     uppll        |     0.110 |
 |   sevensegm      |    <0.001 |
 |     ctworo       |    <0.001 |
 |       countforss |    <0.001 |
 |     ssdis        |    <0.001 |
-|   uart64         |     0.002 |
+|   uart64         |     0.001 |
 |     transmit     |    <0.001 |
 +------------------+-----------+
 

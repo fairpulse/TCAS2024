@@ -17,6 +17,8 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,7 +43,6 @@ read_verilog -library xil_defaultlib {
   /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/pt/Xilinx/Vivado/2018.1/bin/FirstCROPUF/Sources/ssdtop.v
   /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/uartmodDRC.v
   /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/new/enhancedCROwrap.v
-  /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/ComparetwoRODRC.v
 }
 read_vhdl -library xil_defaultlib /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/sources_1/imports/new/UART_TXDDRC.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -52,6 +53,9 @@ read_vhdl -library xil_defaultlib /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/Enha
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/new/TimingTop.xdc
+set_property used_in_implementation false [get_files /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/new/TimingTop.xdc]
+
 read_xdc /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc
 set_property used_in_implementation false [get_files /opt/Xilinx/Vivado/2018.1/bin/EnhancedCRO/EnhancedCRO.srcs/constrs_1/imports/Sources/Comparehmxdc.xdc]
 
