@@ -1,0 +1,513 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Fri Sep 20 16:23:04 2024
+| Host         : RSC-Precision-T3600 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_timing_summary -file ./EnhancedCRO/post_route_tsummary.rpt
+| Design       : enhancedCROwrap
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.21 2018-02-08
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 10 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[0]/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[1]/Q (HIGH)
+
+ There are 76 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[2]/Q (HIGH)
+
+ There are 76 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[3]/Q (HIGH)
+
+ There are 76 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[4]/Q (HIGH)
+
+ There are 76 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[5]/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[6]/Q (HIGH)
+
+ There are 50 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[7]/Q (HIGH)
+
+ There are 42 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[8]/Q (HIGH)
+
+ There are 76 register/latch pins with no clock driven by root clock pin: FSM_onehot_PS_reg[9]/Q (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: crores/sela_reg[0]/Q (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: crores/sela_reg[1]/Q (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: crores/sela_reg[2]/Q (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: crores/sela_reg[3]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 145 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 96 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 17 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 2 combinational loops in the design. (HIGH)
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -0.590       -6.542                     25                  457        0.068        0.000                      0                  457        4.500        0.000                       0                   259  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+extclk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+extclk             -0.590       -6.542                     25                  438        0.068        0.000                      0                  438        4.500        0.000                       0                   259  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  extclk             extclk                   4.994        0.000                      0                   19        1.133        0.000                      0                   19  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  extclk
+  To Clock:  extclk
+
+Setup :           25  Failing Endpoints,  Worst Slack       -0.590ns,  Total Violation       -6.542ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.068ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.590ns  (required time - arrival time)
+  Source:                 FSM_onehot_PS_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sevensegm/ctworo/fdif_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             extclk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (extclk rise@10.000ns - extclk rise@0.000ns)
+  Data Path Delay:        10.557ns  (logic 3.473ns (32.896%)  route 7.084ns (67.104%))
+  Logic Levels:           15  (CARRY4=11 LUT2=1 LUT3=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.947ns = ( 14.947 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.233ns
+    Clock Pessimism Removal (CPR):    0.180ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         1.631     5.233    clk_IBUF_BUFG
+    SLICE_X9Y100         FDRE                                         r  FSM_onehot_PS_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y100         FDRE (Prop_fdre_C_Q)         0.419     5.652 r  FSM_onehot_PS_reg[9]/Q
+                         net (fo=4, routed)           1.159     6.811    p_2_in
+    SLICE_X9Y98          LUT6 (Prop_lut6_I3_O)        0.299     7.110 f  sevensegm_i_2/O
+                         net (fo=166, routed)         2.368     9.478    sevensegm/ctworo/countforss/clr
+    SLICE_X10Y86         LUT2 (Prop_lut2_I1_O)        0.150     9.628 r  sevensegm/ctworo/countforss/acount[1]_INST_0/O
+                         net (fo=4, routed)           1.284    10.912    sevensegm/ctworo/acount[1]
+    SLICE_X11Y90         LUT4 (Prop_lut4_I2_O)        0.328    11.240 r  sevensegm/ctworo/resp_i_37/O
+                         net (fo=1, routed)           0.000    11.240    sevensegm/ctworo/resp_i_37_n_0
+    SLICE_X11Y90         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    11.772 r  sevensegm/ctworo/resp_reg_i_21/CO[3]
+                         net (fo=1, routed)           0.000    11.772    sevensegm/ctworo/resp_reg_i_21_n_0
+    SLICE_X11Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.886 r  sevensegm/ctworo/resp_reg_i_12/CO[3]
+                         net (fo=1, routed)           0.000    11.886    sevensegm/ctworo/resp_reg_i_12_n_0
+    SLICE_X11Y92         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.000 r  sevensegm/ctworo/resp_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.000    sevensegm/ctworo/resp_reg_i_3_n_0
+    SLICE_X11Y93         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.114 r  sevensegm/ctworo/resp_reg_i_2/CO[3]
+                         net (fo=32, routed)          2.274    14.388    sevensegm/ctworo/resp_reg_i_2_n_0
+    SLICE_X12Y89         LUT3 (Prop_lut3_I2_O)        0.157    14.545 r  sevensegm/ctworo/fdif[7]_i_2/O
+                         net (fo=1, routed)           0.000    14.545    sevensegm/ctworo/p_1_in[7]
+    SLICE_X12Y89         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.338    14.883 r  sevensegm/ctworo/fdif_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.883    sevensegm/ctworo/fdif_reg[7]_i_1_n_0
+    SLICE_X12Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.000 r  sevensegm/ctworo/fdif_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.000    sevensegm/ctworo/fdif_reg[11]_i_1_n_0
+    SLICE_X12Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.117 r  sevensegm/ctworo/fdif_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.117    sevensegm/ctworo/fdif_reg[15]_i_1_n_0
+    SLICE_X12Y92         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.234 r  sevensegm/ctworo/fdif_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.234    sevensegm/ctworo/fdif_reg[19]_i_1_n_0
+    SLICE_X12Y93         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.351 r  sevensegm/ctworo/fdif_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.351    sevensegm/ctworo/fdif_reg[23]_i_1_n_0
+    SLICE_X12Y94         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.468 r  sevensegm/ctworo/fdif_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.468    sevensegm/ctworo/fdif_reg[27]_i_1_n_0
+    SLICE_X12Y95         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.791 r  sevensegm/ctworo/fdif_reg[31]_i_2/O[1]
+                         net (fo=1, routed)           0.000    15.791    sevensegm/ctworo/fdif_reg[31]_i_2_n_6
+    SLICE_X12Y95         FDRE                                         r  sevensegm/ctworo/fdif_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock extclk rise edge)    10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         1.524    14.947    sevensegm/ctworo/clk
+    SLICE_X12Y95         FDRE                                         r  sevensegm/ctworo/fdif_reg[29]/C
+                         clock pessimism              0.180    15.127    
+                         clock uncertainty           -0.035    15.091    
+    SLICE_X12Y95         FDRE (Setup_fdre_C_D)        0.109    15.200    sevensegm/ctworo/fdif_reg[29]
+  -------------------------------------------------------------------
+                         required time                         15.200    
+                         arrival time                         -15.791    
+  -------------------------------------------------------------------
+                         slack                                 -0.590    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.068ns  (arrival time - required time)
+  Source:                 FSM_onehot_PS_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            uart64/FSM_sequential_uartState_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             extclk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (extclk rise@0.000ns - extclk rise@0.000ns)
+  Data Path Delay:        0.516ns  (logic 0.254ns (49.205%)  route 0.262ns (50.794%))
+  Logic Levels:           2  (LUT5=2)
+  Clock Path Skew:        0.329ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.012ns
+    Source Clock Delay      (SCD):    1.495ns
+    Clock Pessimism Removal (CPR):    0.188ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         0.576     1.495    clk_IBUF_BUFG
+    SLICE_X10Y98         FDRE                                         r  FSM_onehot_PS_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y98         FDRE (Prop_fdre_C_Q)         0.164     1.659 f  FSM_onehot_PS_reg[5]/Q
+                         net (fo=4, routed)           0.206     1.866    uart64/gosen
+    SLICE_X10Y97         LUT5 (Prop_lut5_I4_O)        0.045     1.911 r  uart64/FSM_sequential_uartState[2]_i_2/O
+                         net (fo=1, routed)           0.056     1.967    uart64/transmit/FSM_sequential_uartState_reg[2]_0
+    SLICE_X10Y97         LUT5 (Prop_lut5_I0_O)        0.045     2.012 r  uart64/transmit/FSM_sequential_uartState[2]_i_1/O
+                         net (fo=1, routed)           0.000     2.012    uart64/transmit_n_2
+    SLICE_X10Y97         FDRE                                         r  uart64/FSM_sequential_uartState_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.165 r  uartbuf/O
+                         net (fo=155, routed)         0.847     2.012    uart64/uartclk
+    SLICE_X10Y97         FDRE                                         r  uart64/FSM_sequential_uartState_reg[2]/C
+                         clock pessimism             -0.188     1.824    
+    SLICE_X10Y97         FDRE (Hold_fdre_C_D)         0.120     1.944    uart64/FSM_sequential_uartState_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.944    
+                         arrival time                           2.012    
+  -------------------------------------------------------------------
+                         slack                                  0.068    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         extclk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y17  clk_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X15Y91    uart64/sendStr_reg[3][1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X15Y97    uart64/sendStr_reg[2][7]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  extclk
+  To Clock:  extclk
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.994ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.133ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.994ns  (required time - arrival time)
+  Source:                 FSM_onehot_PS_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sevensegm/ctworo/countforss/rcountt_reg[10]/CLR
+                            (recovery check against rising-edge clock extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (extclk rise@10.000ns - extclk rise@0.000ns)
+  Data Path Delay:        4.458ns  (logic 0.718ns (16.107%)  route 3.740ns (83.893%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.108ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.946ns = ( 14.946 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.233ns
+    Clock Pessimism Removal (CPR):    0.180ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         1.631     5.233    clk_IBUF_BUFG
+    SLICE_X9Y100         FDRE                                         r  FSM_onehot_PS_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y100         FDRE (Prop_fdre_C_Q)         0.419     5.652 r  FSM_onehot_PS_reg[9]/Q
+                         net (fo=4, routed)           1.159     6.811    p_2_in
+    SLICE_X9Y98          LUT6 (Prop_lut6_I3_O)        0.299     7.110 f  sevensegm_i_2/O
+                         net (fo=166, routed)         2.581     9.691    sevensegm/ctworo/countforss/clr
+    SLICE_X11Y87         FDCE                                         f  sevensegm/ctworo/countforss/rcountt_reg[10]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock extclk rise edge)    10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         1.523    14.946    sevensegm/ctworo/countforss/clk
+    SLICE_X11Y87         FDCE                                         r  sevensegm/ctworo/countforss/rcountt_reg[10]/C
+                         clock pessimism              0.180    15.126    
+                         clock uncertainty           -0.035    15.090    
+    SLICE_X11Y87         FDCE (Recov_fdce_C_CLR)     -0.405    14.685    sevensegm/ctworo/countforss/rcountt_reg[10]
+  -------------------------------------------------------------------
+                         required time                         14.685    
+                         arrival time                          -9.691    
+  -------------------------------------------------------------------
+                         slack                                  4.994    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.133ns  (arrival time - required time)
+  Source:                 FSM_onehot_PS_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sevensegm/ctworo/countforss/rcountt_reg[16]/CLR
+                            (removal check against rising-edge clock extclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (extclk rise@0.000ns - extclk rise@0.000ns)
+  Data Path Delay:        1.315ns  (logic 0.186ns (14.143%)  route 1.129ns (85.857%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.274ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.009ns
+    Source Clock Delay      (SCD):    1.489ns
+    Clock Pessimism Removal (CPR):    0.245ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         0.570     1.489    clk_IBUF_BUFG
+    SLICE_X9Y100         FDRE                                         r  FSM_onehot_PS_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y100         FDRE (Prop_fdre_C_Q)         0.141     1.630 r  FSM_onehot_PS_reg[2]/Q
+                         net (fo=3, routed)           0.358     1.988    FSM_onehot_PS_reg_n_0_[2]
+    SLICE_X9Y98          LUT6 (Prop_lut6_I1_O)        0.045     2.033 f  sevensegm_i_2/O
+                         net (fo=166, routed)         0.771     2.805    sevensegm/ctworo/countforss/clr
+    SLICE_X11Y89         FDCE                                         f  sevensegm/ctworo/countforss/rcountt_reg[16]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock extclk rise edge)     0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=2, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=104, routed)         0.844     2.009    sevensegm/ctworo/countforss/clk
+    SLICE_X11Y89         FDCE                                         r  sevensegm/ctworo/countforss/rcountt_reg[16]/C
+                         clock pessimism             -0.245     1.763    
+    SLICE_X11Y89         FDCE (Remov_fdce_C_CLR)     -0.092     1.671    sevensegm/ctworo/countforss/rcountt_reg[16]
+  -------------------------------------------------------------------
+                         required time                         -1.671    
+                         arrival time                           2.805    
+  -------------------------------------------------------------------
+                         slack                                  1.133    
+
+
+
+
+
